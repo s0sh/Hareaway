@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="MyriadPro-Cond.otf">
+            <string>MyriadPro-Cond</string>
+            <string>MyriadPro-Cond</string>
+            <string>MyriadPro-Cond</string>
+            <string>MyriadPro-Cond</string>
+            <string>MyriadPro-Cond</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Ice Cream View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController storyboardIdentifier="IceCreamViewController" id="vXZ-lx-hvc" customClass="IceCreamViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Service Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOF-NY-4Rd">
+                                <rect key="frame" x="65" y="28" width="190" height="21"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Cond" family="Myriad Pro" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_navigation_bar(1)" translatesAutoresizingMaskIntoConstraints="NO" id="Dfh-4n-aQ9">
+                                <rect key="frame" x="0.0" y="51" width="320" height="11"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icecream" translatesAutoresizingMaskIntoConstraints="NO" id="Xus-KV-pas">
+                                <rect key="frame" x="0.0" y="63" width="320" height="178"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blue_bg" translatesAutoresizingMaskIntoConstraints="NO" id="EWz-S7-l2y">
+                                <rect key="frame" x="0.0" y="241" width="320" height="40"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FREE ICE CREAM DAY" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JaP-Sl-N66">
+                                <rect key="frame" x="5" y="251" width="153" height="21"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Cond" family="Myriad Pro" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10 yd" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5e-5K-CWK">
+                                <rect key="frame" x="248" y="251" width="67" height="21"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Cond" family="Myriad Pro" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="about_service" translatesAutoresizingMaskIntoConstraints="NO" id="yua-pe-obr">
+                                <rect key="frame" x="0.0" y="289" width="320" height="25"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="group" translatesAutoresizingMaskIntoConstraints="NO" id="gXb-u4-RGn">
+                                <rect key="frame" x="0.0" y="411" width="320" height="25"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hi-8p-RYV">
+                                <rect key="frame" x="5" y="307" width="310" height="96"/>
+                                <string key="text">See the list of media liked by the authenticated user. Private media is returned as long as the authenticated user has permission to view that media. Liked media lists are only available for the currently authenticated user.</string>
+                                <fontDescription key="fontDescription" name="MyriadPro-Cond" family="Myriad Pro" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GjL-AI-hmM">
+                                <rect key="frame" x="5" y="424" width="310" height="96"/>
+                                <string key="text">See the list of media liked by the authenticated user. Private media is returned as long as the authenticated user has permission to view that media. Liked media lists are only available for the currently authenticated user.</string>
+                                <fontDescription key="fontDescription" name="MyriadPro-Cond" family="Myriad Pro" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="close_icon_main" translatesAutoresizingMaskIntoConstraints="NO" id="fCc-3k-hio">
+                                <rect key="frame" x="269" y="18" width="30" height="30"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aFh-tE-5yJ">
+                                <rect key="frame" x="262" y="27" width="46" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Decline">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="declean:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Sqs-fn-1ba"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="about" destination="7hi-8p-RYV" id="tKp-1E-1oq"/>
+                        <outlet property="decleanPromo" destination="aFh-tE-5yJ" id="YKm-bi-qe6"/>
+                        <outlet property="group" destination="GjL-AI-hmM" id="gDA-Ei-2ek"/>
+                        <outlet property="icecreamPromoPic" destination="Xus-KV-pas" id="ETA-Hb-esq"/>
+                        <outlet property="inner_title" destination="JaP-Sl-N66" id="whp-PX-Gbc"/>
+                        <outlet property="length" destination="S5e-5K-CWK" id="nl3-47-e4v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="310" y="371"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="about_service" width="170" height="11"/>
+        <image name="bg_navigation_bar(1)" width="640" height="92"/>
+        <image name="blue_bg" width="31" height="18"/>
+        <image name="close_icon_main" width="26" height="26"/>
+        <image name="group" width="170" height="10"/>
+        <image name="icecream" width="176" height="84"/>
+    </resources>
+</document>

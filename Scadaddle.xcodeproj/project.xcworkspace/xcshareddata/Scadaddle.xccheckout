@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8424FC06-8275-485E-942D-3363563CCC12</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Scadaddle</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>443AA5586339F2C9E27C403FAA84A9DC286B26F7</key>
+		<string>http://rep.erminesoft.com/scadaddle/ios</string>
+		<key>99a3eff9-9a79-e111-9a0d-00242129e9ee++5132</key>
+<<<<<<< 735356c43edde0cdb7be01fe761ac81e2ea48045
+<<<<<<< 75ad4bae787af9d12ca31aba494601b5f27ac599
+<<<<<<< 57072838e442f28db5d55e7158a672e993c733b1
+		<string>https://r.bigun@svn.aimprosoft.com/svn/c3networx/iphone/trunk/HabitFactorPro_0102%25252525252525252525202/Facebook/JSON</string>
+=======
+<<<<<<< Updated upstream
+		<string>https://r.bigun@svn.aimprosoft.com/svn/c3networx/iphone/trunk/HabitFactorPro_0102%2525252525252525202/Facebook/JSON</string>
+=======
+		<string>https://r.bigun@svn.aimprosoft.com/svn/c3networx/iphone/trunk/HabitFactorPro_0102%25252525202/Facebook/JSON</string>
+>>>>>>> Stashed changes
+>>>>>>> a16c412cf43bf97737a309b59b8a0a3f2a024ea6
+=======
+		<string>https://r.bigun@svn.aimprosoft.com/svn/c3networx/iphone/trunk/HabitFactorPro_0102%25202/Facebook/JSON</string>
+>>>>>>> 812723db57f184fd96c9b3f42a3667df55a4445c
+=======
+		<string>https://r.bigun@svn.aimprosoft.com/svn/c3networx/iphone/trunk/HabitFactorPro_0102%2525252525252525202/Facebook/JSON</string>
+>>>>>>> 16b4f865ad09349a3212bda5c39d4f5ac8767c1e
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Scadaddle.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>443AA5586339F2C9E27C403FAA84A9DC286B26F7</key>
+		<string>../..</string>
+		<key>99a3eff9-9a79-e111-9a0d-00242129e9ee++5132</key>
+		<string>../..Scadaddle/Core/Network/JSON</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>99a3eff9-9a79-e111-9a0d-00242129e9ee++5132</key>
+		<string>https://r.bigun@svn.aimprosoft.com/svn/c3networx</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>http://rep.erminesoft.com/scadaddle/ios</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>443AA5586339F2C9E27C403FAA84A9DC286B26F7</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>99a3eff9-9a79-e111-9a0d-00242129e9ee++5132</string>
+			<key>IDESourceControlWCCName</key>
+			<string>JSON</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>443AA5586339F2C9E27C403FAA84A9DC286B26F7</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Test_sad</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="MyriadPro-Cond.otf">
+            <string>MyriadPro-Cond</string>
+            <string>MyriadPro-Cond</string>
+        </mutableArray>
+        <mutableArray key="MyriadPro-Regular.otf">
+            <string>MyriadPro-Regular</string>
+            <string>MyriadPro-Regular</string>
+            <string>MyriadPro-Regular</string>
+            <string>MyriadPro-Regular</string>
+            <string>MyriadPro-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Notebook View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController storyboardIdentifier="NotebookViewController" id="vXZ-lx-hvc" customClass="NotebookViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Notebook" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7a-XH-VGH">
+                                <rect key="frame" x="0.0" y="24" width="320" height="21"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Cond" family="Myriad Pro" pointSize="21"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rUG-Va-GyF">
+                                <rect key="frame" x="0.0" y="99" width="320" height="469"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nIE-7K-gYE">
+                                        <rect key="frame" x="0.0" y="3" width="320" height="47"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ki1-QO-Qdy">
+                                                <rect key="frame" x="259" y="6" width="56" height="34"/>
+                                                <state key="normal" backgroundImage="cancel_btn"/>
+                                                <state key="highlighted" backgroundImage="cancel_hover_btn"/>
+                                                <connections>
+                                                    <action selector="cancelSearchAction" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gIk-Aj-Oja"/>
+                                                </connections>
+                                            </button>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="niZ-GW-wtx">
+                                                <rect key="frame" x="21" y="8" width="210" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                                            </textField>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ts-YI-l5M">
+                                                <rect key="frame" x="214" y="-1" width="41" height="48"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <state key="normal" image="search_icon-2"/>
+                                                <state key="highlighted" image="search_icon_hover "/>
+                                                <connections>
+                                                    <action selector="cearchAction" destination="vXZ-lx-hvc" eventType="touchUpInside" id="jzB-Kr-BcT"/>
+                                                </connections>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="search_input" translatesAutoresizingMaskIntoConstraints="NO" id="iYq-5P-M5c">
+                                                <rect key="frame" x="8" y="6" width="248" height="34"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="SRf-9d-wnw">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="470"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="vXZ-lx-hvc" id="cyF-Gx-CBC"/>
+                                            <outlet property="delegate" destination="vXZ-lx-hvc" id="sy5-Qh-tPh"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="48h-c3-7AB" customClass="emsNotificationButton">
+                                <rect key="frame" x="269" y="516" width="44" height="44"/>
+                                <state key="normal" backgroundImage="notification_btn">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showRightMenu" destination="vXZ-lx-hvc" eventType="touchUpInside" id="L2W-Cp-EdK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ogz-s5-XMV">
+                                <rect key="frame" x="8" y="516" width="44" height="44"/>
+                                <state key="normal" backgroundImage="menu_btn">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showLeftMenu" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ejL-3V-C0A"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="55" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tnb-xd-sKI">
+                                <rect key="frame" x="0.0" y="49" width="64" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" backgroundImage="activity_menu_hover_main">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" backgroundImage="activity_menu_main"/>
+                                <connections>
+                                    <action selector="refreshTableForDataWithMode:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Sco-db-s3w"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fWg-vi-eRy">
+                                <rect key="frame" x="64" y="49" width="64" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" backgroundImage="following_menu_ice">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="refreshTableForDataWithMode:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gdH-zm-FeZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FOLLOWINGS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKy-VY-5La">
+                                <rect key="frame" x="62" y="77" width="66" height="21"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="9"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wie-oS-sMN">
+                                <rect key="frame" x="124" y="49" width="64" height="50"/>
+                                <state key="normal" backgroundImage="ice_breacker_menu_ice">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="refreshTableForDataWithMode:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="pw9-Oe-xAV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ICE BREAKER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XJF-zI-XxH">
+                                <rect key="frame" x="121" y="78" width="70" height="21"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="9"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Gl-0b-S1s">
+                                <rect key="frame" x="188" y="49" width="64" height="50"/>
+                                <state key="normal" backgroundImage="friends_menu_ice">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="refreshTableForDataWithMode:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="iKu-bW-8jg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ALL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i2o-Hp-Mlt">
+                                <rect key="frame" x="12" y="77" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="9"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FRIENDS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1e-qa-XQP">
+                                <rect key="frame" x="187" y="78" width="66" height="21"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="9"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="green_circle" translatesAutoresizingMaskIntoConstraints="NO" id="0Tf-fc-MQh">
+                                <rect key="frame" x="165" y="49" width="20" height="20"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kn7-Iu-wWT">
+                                <rect key="frame" x="158" y="50" width="35" height="21"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Cond" family="Myriad Pro" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bdn-5s-eim">
+                                <rect key="frame" x="252" y="49" width="68" height="50"/>
+                                <state key="normal" backgroundImage="block_menu_ice">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="refreshTableForDataWithMode:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="afs-Jp-Ej9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BLOCKS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="znK-LR-OF1">
+                                <rect key="frame" x="258" y="78" width="53" height="21"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="9"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOF-JF-dWC">
+                                <rect key="frame" x="252" y="20" width="68" height="27"/>
+                                <inset key="contentEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" image="search_icon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showSearchBar" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Qts-BS-rYg"/>
+                                </connections>
+                            </button>
+                            <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="thx-OY-EUM">
+                                <rect key="frame" x="0.0" y="100" width="320" height="415"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oAM-TZ-45u">
+                                        <rect key="frame" x="0.0" y="125" width="320" height="140"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="btnFilterAll" destination="tnb-xd-sKI" id="uxb-fD-YLI"/>
+                        <outlet property="btnFilterBlocks" destination="Bdn-5s-eim" id="Mtn-b0-8Tv"/>
+                        <outlet property="btnFilterFollowers" destination="fWg-vi-eRy" id="Fa9-ds-h29"/>
+                        <outlet property="btnFilterFriends" destination="9Gl-0b-S1s" id="0yK-4Z-QZ8"/>
+                        <outlet property="btnFilterIcebreaker" destination="wie-oS-sMN" id="YGa-Bz-Y19"/>
+                        <outlet property="cancelBtn" destination="Ki1-QO-Qdy" id="BhM-2a-BSP"/>
+                        <outlet property="itemsTable" destination="SRf-9d-wnw" id="dD7-Ew-xub"/>
+                        <outlet property="noContents" destination="thx-OY-EUM" id="UCT-Nt-TjC"/>
+                        <outlet property="noContentsBG" destination="oAM-TZ-45u" id="g1Z-eN-CMq"/>
+                        <outlet property="notificationBg" destination="0Tf-fc-MQh" id="kIa-NA-LAm"/>
+                        <outlet property="notificationLbl" destination="kn7-Iu-wWT" id="xeZ-Ud-Zaf"/>
+                        <outlet property="searchBtn" destination="7ts-YI-l5M" id="fZp-5M-s1V"/>
+                        <outlet property="searchField" destination="niZ-GW-wtx" id="Ld0-e7-fYw"/>
+                        <outlet property="viewWhithTableView" destination="rUG-Va-GyF" id="Ldi-Pc-kkT"/>
+                        <outlet property="viewWhithTextField" destination="nIE-7K-gYE" id="vuv-Cd-M2K"/>
+                    </connections>
+                </viewController>
+                <view contentMode="scaleToFill" id="FMa-h2-qql">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="menu_bg" translatesAutoresizingMaskIntoConstraints="NO" id="mMk-Dk-Qc8">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rAI-EL-cGT">
+                            <rect key="frame" x="8" y="122" width="304" height="394"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLr-9i-cBK">
+                            <rect key="frame" x="10" y="516" width="44" height="44"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" id="ukm-TZ-Ael">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="menu_bg" translatesAutoresizingMaskIntoConstraints="NO" id="eTP-hV-Mmz">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="npC-Rx-kZo">
+                            <rect key="frame" x="8" y="110" width="304" height="390"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9IE-7L-ecu">
+                            <rect key="frame" x="262" y="516" width="44" height="44"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="564" y="214"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="k4U-CE-RIc">
+            <objects>
+                <viewController id="VLY-MF-62v" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VWm-RG-5V5"/>
+                        <viewControllerLayoutGuide type="bottom" id="xdK-qL-mDa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eiE-eo-fxS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Udb-Xr-SKU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="55" y="230"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="activity_menu_hover_main" width="128" height="100"/>
+        <image name="activity_menu_main" width="128" height="100"/>
+        <image name="block_menu_ice" width="128" height="100"/>
+        <image name="cancel_btn" width="56" height="32"/>
+        <image name="cancel_hover_btn" width="56" height="32"/>
+        <image name="following_menu_ice" width="128" height="100"/>
+        <image name="friends_menu_ice" width="128" height="100"/>
+        <image name="green_circle" width="14" height="14"/>
+        <image name="ice_breacker_menu_ice" width="128" height="100"/>
+        <image name="menu_bg" width="320" height="568"/>
+        <image name="menu_btn" width="46" height="47"/>
+        <image name="notification_btn" width="46" height="47"/>
+        <image name="search_icon" width="23" height="24"/>
+        <image name="search_icon-2" width="22" height="22"/>
+        <image name="search_icon_hover " width="22" height="22"/>
+        <image name="search_input" width="282" height="32"/>
+    </resources>
+</document>

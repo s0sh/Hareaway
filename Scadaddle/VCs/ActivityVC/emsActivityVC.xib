@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="MyriadPro-Cond.otf">
+            <string>MyriadPro-Cond</string>
+            <string>MyriadPro-Cond</string>
+            <string>MyriadPro-Cond</string>
+            <string>MyriadPro-Cond</string>
+            <string>MyriadPro-Cond</string>
+            <string>MyriadPro-Cond</string>
+            <string>MyriadPro-Cond</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="emsActivityVC">
+            <connections>
+                <outlet property="acceptedActivityBtn" destination="AVA-fq-VeC" id="jww-30-QJu"/>
+                <outlet property="byDateBtn" destination="C9f-fg-GIQ" id="cXb-WS-3Oo"/>
+                <outlet property="byDistanceBtn" destination="Wrf-kH-hnh" id="GrK-ev-mbf"/>
+                <outlet property="cancelBtn" destination="YRR-PS-arK" id="VRg-0k-7nd"/>
+                <outlet property="followingActivityBtn" destination="gUS-wZ-jCf" id="U9y-0z-oHJ"/>
+                <outlet property="myNameBtn" destination="RBw-9G-SEC" id="Z3Q-s1-2I0"/>
+                <outlet property="myOwnActivityBtn" destination="ScH-tO-Q2y" id="X83-1D-1qa"/>
+                <outlet property="noContentView" destination="ALZ-26-y0T" id="IHp-6I-wWV"/>
+                <outlet property="searchButton" destination="041-89-yo5" id="kW5-Pp-jwa"/>
+                <outlet property="searchField" destination="1J0-yT-voL" id="yS8-Rp-9Mo"/>
+                <outlet property="table" destination="krq-Kb-0Sc" id="Gdk-eL-sju"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewWhisTableView" destination="FiZ-ea-xJ7" id="FKf-8R-yYF"/>
+                <outlet property="viewWhisTextFiald" destination="mHd-fD-dtV" id="0qz-1r-P6i"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="CMx-oI-XHS">
+                    <rect key="frame" x="0.0" y="53" width="321" height="46"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.81176470588235294" green="0.81176470588235294" blue="0.81176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ScH-tO-Q2y">
+                    <rect key="frame" x="0.0" y="55" width="106" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.8078432083" green="0.5176470876" blue="0.50980395079999996" alpha="1" colorSpace="deviceRGB"/>
+                    <state key="normal" backgroundImage="my_own_activities_tab">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" backgroundImage="my_own_activities_tab_hover"/>
+                    <connections>
+                        <action selector="selectBTN:" destination="-1" eventType="touchUpInside" id="xYq-mr-xU7"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gUS-wZ-jCf">
+                    <rect key="frame" x="106" y="55" width="107" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.043137254899999998" green="0.41960784309999999" blue="0.72941176470000002" alpha="1" colorSpace="deviceRGB"/>
+                    <state key="normal" backgroundImage="following_activities_tab_">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" backgroundImage="following_activities_tab_hover"/>
+                    <connections>
+                        <action selector="selectBTN:" destination="-1" eventType="touchUpInside" id="7Ex-rO-gMB"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" id="FiZ-ea-xJ7">
+                    <rect key="frame" x="0.0" y="133" width="320" height="435"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="krq-Kb-0Sc">
+                            <rect key="frame" x="0.0" y="-1" width="320" height="436"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="RCu-YK-T34"/>
+                                <outlet property="delegate" destination="-1" id="YxG-mS-abw"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.63137254899999995" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="h_line" id="f48-BH-m4P">
+                    <rect key="frame" x="0.0" y="131" width="320" height="1"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FOLLOWING ACTIVITIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" id="S4g-nA-MJh">
+                    <rect key="frame" x="126" y="89" width="70" height="9"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="MyriadPro-Cond" family="Myriad Pro" pointSize="9"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="shadowColor" white="0.0" alpha="0.14000000000000001" colorSpace="calibratedWhite"/>
+                    <size key="shadowOffset" width="1" height="3"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MY OWN ACTIVITIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" id="gbX-ck-7dM">
+                    <rect key="frame" x="17" y="89" width="70" height="9"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="MyriadPro-Cond" family="Myriad Pro" pointSize="9"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="shadowColor" white="0.0" alpha="0.14000000000000001" colorSpace="calibratedWhite"/>
+                    <size key="shadowOffset" width="1" height="3"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="v_line" id="kO7-qQ-d5I">
+                    <rect key="frame" x="105" y="99" width="1" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="v_line" id="Mer-W7-MOb">
+                    <rect key="frame" x="213" y="99" width="1" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="C9f-fg-GIQ">
+                    <rect key="frame" x="107" y="101" width="105" height="28"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="MyriadPro-Cond" family="Myriad Pro" pointSize="14"/>
+                    <state key="normal" title="BY DATE">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="0.058823529409999999" green="0.3294117647" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="selectDescriptionBTN:" destination="-1" eventType="touchUpInside" id="cIE-Tu-fCg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Bq8-gs-XHj">
+                    <rect key="frame" x="8" y="19" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" image="add_Iphone6">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="newActivity" destination="-1" eventType="touchUpInside" id="V8e-Gs-t7x"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" id="ALZ-26-y0T">
+                    <rect key="frame" x="0.0" y="135" width="320" height="433"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_activities" id="W1f-Ei-Igd">
+                            <rect key="frame" x="0.0" y="88" width="320" height="132"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="q7U-1k-Xqi" customClass="emsNotificationButton">
+                    <rect key="frame" x="272" y="516" width="44" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="notification_btn">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="showRightMenu" destination="-1" eventType="touchUpInside" id="xyq-v3-trO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zAg-47-YLA">
+                    <rect key="frame" x="10" y="516" width="44" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                    <state key="normal" backgroundImage="menu_btn">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="showLeftMenu" destination="-1" eventType="touchUpInside" id="CEA-cL-SbL"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="AVA-fq-VeC">
+                    <rect key="frame" x="213" y="55" width="106" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.043137254899999998" green="0.41960784309999999" blue="0.72941176470000002" alpha="1" colorSpace="deviceRGB"/>
+                    <state key="normal" backgroundImage="accepted_activities_tab">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" backgroundImage="accepted_activities_tab_hover"/>
+                    <connections>
+                        <action selector="selectBTN:" destination="-1" eventType="touchUpInside" id="W0w-87-sfD"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACCEPTED ACTIVITIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" id="IBM-fr-3Ms">
+                    <rect key="frame" x="230" y="89" width="70" height="9"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="MyriadPro-Cond" family="Myriad Pro" pointSize="9"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="shadowColor" white="0.0" alpha="0.14000000000000001" colorSpace="calibratedWhite"/>
+                    <size key="shadowOffset" width="1" height="3"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Wrf-kH-hnh">
+                    <rect key="frame" x="-1" y="101" width="105" height="28"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="MyriadPro-Cond" family="Myriad Pro" pointSize="14"/>
+                    <state key="normal" title="BY DISTANCE">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="0.058823529409999999" green="0.3294117647" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="selectDescriptionBTN:" destination="-1" eventType="touchUpInside" id="Lzb-97-7LY"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" id="mHd-fD-dtV">
+                    <rect key="frame" x="320" y="131" width="320" height="47"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="YRR-PS-arK">
+                            <rect key="frame" x="259" y="6" width="56" height="34"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="cancel_btn"/>
+                            <state key="highlighted" backgroundImage="cancel_hover_btn"/>
+                            <connections>
+                                <action selector="cancelSearchActionWhishReloading" destination="-1" eventType="touchUpInside" id="bAw-4i-4Fr"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search" textAlignment="natural" minimumFontSize="17" id="1J0-yT-voL">
+                            <rect key="frame" x="21" y="8" width="210" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="zZp-O0-GWu"/>
+                            </connections>
+                        </textField>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="041-89-yo5">
+                            <rect key="frame" x="214" y="-1" width="41" height="48"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" image="search_icon-2"/>
+                            <state key="highlighted" image="search_icon_hover "/>
+                            <connections>
+                                <action selector="cearchAction" destination="-1" eventType="touchUpInside" id="DTS-NJ-xBL"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search_input" id="mXt-JA-DrL">
+                            <rect key="frame" x="8" y="6" width="248" height="34"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="RBw-9G-SEC">
+                    <rect key="frame" x="215" y="101" width="105" height="28"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="MyriadPro-Cond" family="Myriad Pro" pointSize="14"/>
+                    <state key="normal" title="BY NAME">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="0.058823529409999999" green="0.3294117647" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="selectDescriptionBTN:" destination="-1" eventType="touchUpInside" id="aZg-lK-Jbe"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activities" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3M4-mp-2jg">
+                    <rect key="frame" x="116" y="22" width="102" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="MyriadPro-Cond" family="Myriad Pro" pointSize="21"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bLp-YB-4PO">
+                    <rect key="frame" x="226" y="12" width="90" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <inset key="contentEdgeInsets" minX="57" minY="8" maxX="6" maxY="4"/>
+                    <state key="normal" image="search_Iphone6">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="search_pressed_Iphone6"/>
+                    <connections>
+                        <action selector="showSearchBar" destination="-1" eventType="touchUpInside" id="7Wm-wD-xED"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="359" y="239"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="accepted_activities_tab" width="106" height="50"/>
+        <image name="accepted_activities_tab_hover" width="106" height="50"/>
+        <image name="add_Iphone6" width="60" height="60"/>
+        <image name="cancel_btn" width="56" height="32"/>
+        <image name="cancel_hover_btn" width="56" height="32"/>
+        <image name="following_activities_tab_" width="107" height="50"/>
+        <image name="following_activities_tab_hover" width="107" height="50"/>
+        <image name="h_line" width="1" height="1"/>
+        <image name="menu_btn" width="46" height="47"/>
+        <image name="my_own_activities_tab" width="106" height="50"/>
+        <image name="my_own_activities_tab_hover" width="106" height="50"/>
+        <image name="no_activities" width="320" height="110"/>
+        <image name="notification_btn" width="46" height="47"/>
+        <image name="search_Iphone6" width="59" height="60"/>
+        <image name="search_icon-2" width="22" height="22"/>
+        <image name="search_icon_hover " width="22" height="22"/>
+        <image name="search_input" width="282" height="32"/>
+        <image name="search_pressed_Iphone6" width="59" height="60"/>
+        <image name="v_line" width="1" height="1"/>
+    </resources>
+</document>

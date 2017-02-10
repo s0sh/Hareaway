@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="MyriadPro-Cond.otf">
+            <string>MyriadPro-Cond</string>
+            <string>MyriadPro-Cond</string>
+            <string>MyriadPro-Cond</string>
+        </mutableArray>
+        <mutableArray key="MyriadPro-Semibold.otf">
+            <string>MyriadPro-Semibold</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Create Interest View Controller-->
+        <scene sceneID="vKw-Ia-jvJ">
+            <objects>
+                <viewController storyboardIdentifier="CreateInterestViewController" id="7CY-MG-3zj" customClass="CreateInterestViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="auP-AV-hf8"/>
+                        <viewControllerLayoutGuide type="bottom" id="k2a-Wf-yLr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ewe-b0-stu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_navigation_bar(1)" translatesAutoresizingMaskIntoConstraints="NO" id="IOs-lS-txc">
+                                <rect key="frame" x="0.0" y="38" width="320" height="16"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="New Interest" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BhY-ld-o8K">
+                                <rect key="frame" x="0.0" y="24" width="320" height="21"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Cond" family="Myriad Pro" pointSize="21"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8f1-uc-Txr">
+                                <rect key="frame" x="39" y="110" width="55" height="55"/>
+                                <state key="normal" backgroundImage="camera_add_interest">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="fromCamera:" destination="7CY-MG-3zj" eventType="touchUpInside" id="hKk-3B-A5T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AYD-hd-59B">
+                                <rect key="frame" x="228" y="110" width="55" height="55"/>
+                                <state key="normal" backgroundImage="gallery_add_interest">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="fromGallary" destination="7CY-MG-3zj" eventType="touchUpInside" id="lXW-Fw-2Y2"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" Name" minimumFontSize="17" background="show_more_btn" translatesAutoresizingMaskIntoConstraints="NO" id="hkN-Ha-IUr">
+                                <rect key="frame" x="5" y="201" width="309" height="30"/>
+                                <color key="backgroundColor" red="0.85490196080000003" green="0.90196078430000004" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MAKE PUBLIC" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TNa-WU-A68">
+                                <rect key="frame" x="8" y="252" width="102" height="21"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Semibold" family="Myriad Pro" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GUI-E3-FRA">
+                                <rect key="frame" x="8" y="503" width="304" height="50"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Cond" family="Myriad Pro" pointSize="26"/>
+                                <state key="normal" title="SAVE" backgroundImage="view_btn">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveInterestAndUploadToServer:" destination="7CY-MG-3zj" eventType="touchUpInside" id="gNW-QO-Jk4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFs-hj-5jD">
+                                <rect key="frame" x="7" y="19" width="30" height="30"/>
+                                <state key="normal" backgroundImage="back_icon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="back:" destination="7CY-MG-3zj" eventType="touchUpInside" id="fOD-Sf-ez0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TAKE PHOTO OR CHOOSE IMAGE FROM GALLERY" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xUx-Jc-IJ5">
+                                <rect key="frame" x="61" y="59" width="215" height="21"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Cond" family="Myriad Pro" pointSize="14"/>
+                                <color key="textColor" red="0.6705882352941176" green="0.69803921568627447" blue="0.72549019607843135" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l8o-5g-pJj">
+                                <rect key="frame" x="5" y="69" width="48" height="1"/>
+                                <color key="backgroundColor" red="0.87450980392156863" green="0.89411764705882357" blue="0.89411764705882357" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nNz-F0-v6C">
+                                <rect key="frame" x="270" y="69" width="44" height="1"/>
+                                <color key="backgroundColor" red="0.87450980392156863" green="0.89411764705882357" blue="0.89411764705882357" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WWA-a9-Ori">
+                                <rect key="frame" x="263" y="247" width="51" height="31"/>
+                            </switch>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="placeholder_menu" translatesAutoresizingMaskIntoConstraints="NO" id="8iT-Wu-cvf">
+                                <rect key="frame" x="122" y="93" width="80" height="80"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="avatarImage" destination="8iT-Wu-cvf" id="N7R-Au-b7K"/>
+                        <outlet property="makePublic" destination="WWA-a9-Ori" id="5b7-4n-VtY"/>
+                        <outlet property="nameTF" destination="hkN-Ha-IUr" id="ZT8-aK-bTG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WZu-UL-2aT" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="575" y="227"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back_icon" width="59" height="60"/>
+        <image name="bg_navigation_bar(1)" width="640" height="92"/>
+        <image name="camera_add_interest" width="86" height="85"/>
+        <image name="gallery_add_interest" width="85" height="89"/>
+        <image name="placeholder_menu" width="58" height="58"/>
+        <image name="show_more_btn" width="608" height="64"/>
+        <image name="view_btn" width="608" height="68"/>
+    </resources>
+</document>

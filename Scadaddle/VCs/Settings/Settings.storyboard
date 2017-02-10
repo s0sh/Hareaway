@@ -1,0 +1,1573 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="MyriadPro-Cond.otf">
+            <string>MyriadPro-Cond</string>
+            <string>MyriadPro-Cond</string>
+            <string>MyriadPro-Cond</string>
+            <string>MyriadPro-Cond</string>
+            <string>MyriadPro-Cond</string>
+            <string>MyriadPro-Cond</string>
+            <string>MyriadPro-Cond</string>
+            <string>MyriadPro-Cond</string>
+            <string>MyriadPro-Cond</string>
+            <string>MyriadPro-Cond</string>
+            <string>MyriadPro-Cond</string>
+            <string>MyriadPro-Cond</string>
+            <string>MyriadPro-Cond</string>
+            <string>MyriadPro-Cond</string>
+            <string>MyriadPro-Cond</string>
+            <string>MyriadPro-Cond</string>
+        </mutableArray>
+        <mutableArray key="MyriadPro-Regular.otf">
+            <string>MyriadPro-Regular</string>
+            <string>MyriadPro-Regular</string>
+            <string>MyriadPro-Regular</string>
+            <string>MyriadPro-Regular</string>
+            <string>MyriadPro-Regular</string>
+            <string>MyriadPro-Regular</string>
+            <string>MyriadPro-Regular</string>
+            <string>MyriadPro-Regular</string>
+            <string>MyriadPro-Regular</string>
+            <string>MyriadPro-Regular</string>
+            <string>MyriadPro-Regular</string>
+            <string>MyriadPro-Regular</string>
+            <string>MyriadPro-Regular</string>
+            <string>MyriadPro-Regular</string>
+            <string>MyriadPro-Regular</string>
+            <string>MyriadPro-Regular</string>
+            <string>MyriadPro-Regular</string>
+            <string>MyriadPro-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Payment Settings View Controller-->
+        <scene sceneID="Blj-VS-lZo">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" id="jdz-4g-QeI" customClass="PaymentSettingsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0HT-xC-tY2"/>
+                        <viewControllerLayoutGuide type="bottom" id="RLC-2V-4e9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TBg-Ll-ds0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDO-CE-jXv">
+                                <rect key="frame" x="0.0" y="24" width="320" height="21"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Cond" family="Myriad Pro" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PREFERENCES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RtC-jO-WfT">
+                                <rect key="frame" x="-4" y="79" width="85" height="21"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="11"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkF-MZ-sSY">
+                                <rect key="frame" x="156" y="49" width="80" height="50"/>
+                                <state key="normal" backgroundImage="help_menu_settings">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ODN-dE-lrs" kind="show" id="t0c-Lv-7w0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HELP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDN-9t-nua">
+                                <rect key="frame" x="161" y="80" width="71" height="21"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="11"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EeS-sT-eJk">
+                                <rect key="frame" x="81" y="49" width="76" height="50"/>
+                                <state key="normal" backgroundImage="payment_menu_hover_settings">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PAYMENT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vLg-Ji-3CC">
+                                <rect key="frame" x="81" y="80" width="76" height="21"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="11"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqx-wL-9kz">
+                                <rect key="frame" x="236" y="49" width="84" height="50"/>
+                                <state key="normal" backgroundImage="social_menu_settings">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Q2f-aB-uwA" kind="show" id="SJQ-pS-0Ru"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SOCIAL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sX9-4k-Odr">
+                                <rect key="frame" x="244" y="80" width="71" height="21"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="11"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oHQ-b3-c3v" customClass="emsNotificationButton">
+                                <rect key="frame" x="269" y="516" width="44" height="44"/>
+                                <state key="normal" backgroundImage="notification_btn">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showRightMenu" destination="jdz-4g-QeI" eventType="touchUpInside" id="EAZ-1q-abW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZm-kE-LcF">
+                                <rect key="frame" x="8" y="516" width="44" height="44"/>
+                                <state key="normal" backgroundImage="menu_btn">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showLeftMenu" destination="jdz-4g-QeI" eventType="touchUpInside" id="dd3-ut-GAr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSt-Hd-HcO">
+                                <rect key="frame" x="0.0" y="49" width="81" height="50"/>
+                                <state key="normal" backgroundImage="settinga_menu_settings">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="show" id="Qk2-kq-sDS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PREFERENCES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pxW-Wx-OFh">
+                                <rect key="frame" x="0.0" y="80" width="83" height="21"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="11"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W1Z-k0-7OO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="150" y="359"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController storyboardIdentifier="Settings" modalTransitionStyle="crossDissolve" id="vXZ-lx-hvc" customClass="SettingsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7a-XH-VGH">
+                                <rect key="frame" x="0.0" y="24" width="320" height="21"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Cond" family="Myriad Pro" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="48h-c3-7AB" customClass="emsNotificationButton">
+                                <rect key="frame" x="269" y="516" width="44" height="44"/>
+                                <state key="normal" backgroundImage="notification_btn">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showRightMenu" destination="vXZ-lx-hvc" eventType="touchUpInside" id="L2W-Cp-EdK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ogz-s5-XMV">
+                                <rect key="frame" x="8" y="516" width="44" height="44"/>
+                                <state key="normal" backgroundImage="menu_btn">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showLeftMenu" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ejL-3V-C0A"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tnb-xd-sKI">
+                                <rect key="frame" x="0.0" y="49" width="81" height="50"/>
+                                <state key="normal" backgroundImage="settinga_menu_hover_settings">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PREFERENCES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i2o-Hp-Mlt">
+                                <rect key="frame" x="0.0" y="80" width="83" height="21"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="11"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vOM-0g-F4K">
+                                <rect key="frame" x="156" y="49" width="80" height="50"/>
+                                <state key="normal" backgroundImage="help_menu_settings">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ODN-dE-lrs" kind="show" id="Npm-F5-LM8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HELP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKy-vb-Dmh">
+                                <rect key="frame" x="156" y="80" width="80" height="21"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="11"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHg-Eb-lbK">
+                                <rect key="frame" x="81" y="49" width="76" height="50"/>
+                                <state key="normal" backgroundImage="payment_menu_settings">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="jdz-4g-QeI" kind="show" id="1uW-by-RTX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PAYMENT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJf-2i-qN4">
+                                <rect key="frame" x="81" y="80" width="76" height="21"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="11"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Quf-42-t4S">
+                                <rect key="frame" x="236" y="49" width="84" height="50"/>
+                                <state key="normal" backgroundImage="social_menu_settings">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Q2f-aB-uwA" kind="show" id="UQz-2o-eUp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SOCIAL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxd-nh-prg">
+                                <rect key="frame" x="235" y="80" width="85" height="21"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="11"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AGE RANGE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RLQ-jN-ttR">
+                                <rect key="frame" x="127" y="115" width="67" height="21"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Cond" family="Myriad Pro" pointSize="14"/>
+                                <color key="textColor" red="0.56032986110000005" green="0.56032986110000005" blue="0.56032986110000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gHM-LM-Z1z">
+                                <rect key="frame" x="0.0" y="126" width="127" height="1"/>
+                                <color key="backgroundColor" red="0.86799636989999995" green="0.86799636989999995" blue="0.86799636989999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fVb-5o-Pxa">
+                                <rect key="frame" x="192" y="126" width="129" height="1"/>
+                                <color key="backgroundColor" red="0.86799636989999995" green="0.86799636989999995" blue="0.86799636989999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="YEARS OLD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEj-IX-2XW">
+                                <rect key="frame" x="127" y="192" width="67" height="21"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Cond" family="Myriad Pro" pointSize="12"/>
+                                <color key="textColor" red="0.56032986110000005" green="0.56032986110000005" blue="0.56032986110000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PaM-Ns-laJ">
+                                <rect key="frame" x="96" y="173" width="129" height="21"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Cond" family="Myriad Pro" pointSize="21"/>
+                                <color key="textColor" red="0.56032986110000005" green="0.56032986110000005" blue="0.56032986110000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Show notifications" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcx-nn-YHh">
+                                <rect key="frame" x="20" y="335" width="136" height="21"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpQ-IK-3Fr">
+                                <rect key="frame" x="249" y="326" width="59" height="40"/>
+                                <state key="normal" backgroundImage="858D8FC8-5835-4921-AB8A-9EDC6094A29A">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeState" destination="vXZ-lx-hvc" eventType="touchUpInside" id="EfF-Wa-zjf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpo-JF-gnK">
+                                <rect key="frame" x="16" y="421" width="289" height="40"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Cond" family="Myriad Pro" pointSize="21"/>
+                                <state key="normal" title="LOGOUT" backgroundImage="green_btn">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logout" destination="vXZ-lx-hvc" eventType="touchUpInside" id="yef-ux-Y4U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cbt-N6-k6n">
+                                <rect key="frame" x="15" y="465" width="289" height="40"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Cond" family="Myriad Pro" pointSize="21"/>
+                                <state key="normal" title="SAVE" backgroundImage="view_btn">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="save:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5Pb-E4-4ly"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPO-oc-r8g">
+                                <rect key="frame" x="16" y="377" width="289" height="40"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Cond" family="Myriad Pro" pointSize="21"/>
+                                <state key="normal" title="DELETE PROFILE" backgroundImage="red_btn">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteProfile" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vhd-C8-JgQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XW0-ge-sC1">
+                                <rect key="frame" x="10" y="234" width="295" height="32"/>
+                                <color key="backgroundColor" red="0.85490196078431369" green="0.90588235294117647" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showOnlyAction" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CSL-9q-n7p"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Women" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mkt-FV-7bw">
+                                <rect key="frame" x="207" y="239" width="70" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrow_small" translatesAutoresizingMaskIntoConstraints="NO" id="noO-xU-Xsl">
+                                <rect key="frame" x="291" y="243" width="10" height="14"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PQj-eP-7pc">
+                                <rect key="frame" x="9" y="279" width="295" height="32"/>
+                                <color key="backgroundColor" red="0.85490196080000003" green="0.90588235289999997" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="radiusAction" destination="vXZ-lx-hvc" eventType="touchUpInside" id="E6I-VQ-109"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Show only" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Tf-YY-ZoU">
+                                <rect key="frame" x="20" y="239" width="69" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <color key="textColor" red="0.56032986110000005" green="0.56032986110000005" blue="0.56032986110000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrow_small" translatesAutoresizingMaskIntoConstraints="NO" id="dj8-wv-IGI">
+                                <rect key="frame" x="290" y="290" width="10" height="14"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Radius (miles)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="snJ-eu-gwp">
+                                <rect key="frame" x="20" y="284" width="81" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <color key="textColor" red="0.56032986110000005" green="0.56032986110000005" blue="0.56032986110000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhq-n4-22X">
+                                <rect key="frame" x="10" y="281" width="291" height="29"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="radiusAction" destination="vXZ-lx-hvc" eventType="touchUpInside" id="rpn-bw-9gT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nS9-9w-gWD">
+                                <rect key="frame" x="141" y="286" width="136" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FOV-nH-TZB">
+                                <rect key="frame" x="0.0" y="378" width="332" height="189"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="u9A-4C-B6d"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="paJ-CD-m2h"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="notifBtn" destination="jpQ-IK-3Fr" id="wXf-wY-6S2"/>
+                        <outlet property="picker" destination="FOV-nH-TZB" id="nRl-rm-bbY"/>
+                        <outlet property="radiusLbl" destination="nS9-9w-gWD" id="Lqn-MH-9OT"/>
+                        <outlet property="reportLabel" destination="PaM-Ns-laJ" id="UW0-60-oCF"/>
+                        <outlet property="showWhoomLbl" destination="mkt-FV-7bw" id="Z40-mM-sah"/>
+                    </connections>
+                </viewController>
+                <view contentMode="scaleToFill" id="FMa-h2-qql">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="menu_bg" translatesAutoresizingMaskIntoConstraints="NO" id="mMk-Dk-Qc8">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rAI-EL-cGT">
+                            <rect key="frame" x="8" y="122" width="304" height="394"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLr-9i-cBK">
+                            <rect key="frame" x="10" y="516" width="44" height="44"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" id="ukm-TZ-Ael">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="menu_bg" translatesAutoresizingMaskIntoConstraints="NO" id="eTP-hV-Mmz">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="npC-Rx-kZo">
+                            <rect key="frame" x="8" y="110" width="304" height="390"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9IE-7L-ecu">
+                            <rect key="frame" x="262" y="516" width="44" height="44"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="518" y="359"/>
+        </scene>
+        <!--Help Settings View Controller-->
+        <scene sceneID="YOZ-hr-FIa">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" id="ODN-dE-lrs" customClass="HelpSettingsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="e4f-z9-AQX"/>
+                        <viewControllerLayoutGuide type="bottom" id="Rxs-0K-l0b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="w7O-00-qFZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DpD-6N-QPg">
+                                <rect key="frame" x="0.0" y="24" width="320" height="21"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Cond" family="Myriad Pro" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IV2-aC-dAW">
+                                <rect key="frame" x="0.0" y="49" width="81" height="50"/>
+                                <state key="normal" backgroundImage="settinga_menu_settings">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="show" id="oaf-4G-umE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6cD-BA-fSm">
+                                <rect key="frame" x="156" y="49" width="80" height="50"/>
+                                <state key="normal" backgroundImage="help_menu_hover_settings">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HELP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ugp-5s-Too">
+                                <rect key="frame" x="156" y="80" width="80" height="21"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="11"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tB1-mJ-bOn">
+                                <rect key="frame" x="81" y="49" width="76" height="50"/>
+                                <state key="normal" backgroundImage="payment_menu_settings">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="jdz-4g-QeI" kind="show" id="ysj-pp-6gD"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PAYMENT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JzT-8J-7pO">
+                                <rect key="frame" x="81" y="80" width="76" height="21"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="11"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ms2-0v-vga">
+                                <rect key="frame" x="236" y="49" width="84" height="50"/>
+                                <state key="normal" backgroundImage="social_menu_settings">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Q2f-aB-uwA" kind="show" id="qYx-PV-oL5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SOCIAL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEe-rR-dBD">
+                                <rect key="frame" x="235" y="80" width="85" height="21"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="puX-Wv-dcZ" customClass="emsNotificationButton">
+                                <rect key="frame" x="269" y="516" width="44" height="44"/>
+                                <state key="normal" backgroundImage="notification_btn">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showLeftMenu" destination="ODN-dE-lrs" eventType="touchUpInside" id="UMC-8k-Ft5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Xl-K7-jub">
+                                <rect key="frame" x="8" y="516" width="44" height="44"/>
+                                <state key="normal" backgroundImage="menu_btn">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showLeftMenu" destination="ODN-dE-lrs" eventType="touchUpInside" id="g4S-0A-8o8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PREFERENCES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pI8-LI-gUN">
+                                <rect key="frame" x="0.0" y="80" width="83" height="21"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="11"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo_settings_ios_5" translatesAutoresizingMaskIntoConstraints="NO" id="ufp-qa-K7L">
+                                <rect key="frame" x="15" y="165" width="290" height="80"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mod-J8-A7V">
+                                <rect key="frame" x="16" y="361" width="289" height="40"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Cond" family="Myriad Pro" pointSize="21"/>
+                                <state key="normal" title="TERMS AND CONDITIONS" backgroundImage="light_blue_btn">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="M4x-HA-77o" kind="show" id="wCW-fK-Kxy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SyC-xT-Cyx">
+                                <rect key="frame" x="15" y="313" width="289" height="40"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Cond" family="Myriad Pro" pointSize="21"/>
+                                <state key="normal" title="CONTACT SCADADDLE TEAM" backgroundImage="view_btn">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="composeEmail" destination="ODN-dE-lrs" eventType="touchUpInside" id="rEV-U0-CQs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Lf-t3-IoF">
+                                <rect key="frame" x="15" y="409" width="289" height="40"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Cond" family="Myriad Pro" pointSize="21"/>
+                                <state key="normal" title="PRIVACY POLICY" backgroundImage="green_btn">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="13B-Xb-H28" kind="show" id="Q15-1T-N4m"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gzl-4Q-jvW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-218" y="359"/>
+        </scene>
+        <!--Terms View Controller-->
+        <scene sceneID="VVV-r0-qB8">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" id="M4x-HA-77o" customClass="TermsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oi1-x6-3hi"/>
+                        <viewControllerLayoutGuide type="bottom" id="0ns-Go-dqo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yln-lI-Rqg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_navigation_bar(1)" translatesAutoresizingMaskIntoConstraints="NO" id="9AD-U5-xrt">
+                                <rect key="frame" x="0.0" y="43" width="320" height="15"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Terms And Conditions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2iP-R7-zWg">
+                                <rect key="frame" x="73" y="72" width="174" height="35"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Cond" family="Myriad Pro" pointSize="21"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo_settings_ios_5" translatesAutoresizingMaskIntoConstraints="NO" id="lrl-ml-D13">
+                                <rect key="frame" x="66" y="8" width="179" height="45"/>
+                            </imageView>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2sR-uV-Ixz">
+                                <rect key="frame" x="0.0" y="118" width="320" height="450"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="delegate" destination="M4x-HA-77o" id="3e3-fk-osP"/>
+                                </connections>
+                            </webView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_navigation_bar(1)" translatesAutoresizingMaskIntoConstraints="NO" id="xQ7-U3-ors">
+                                <rect key="frame" x="0.0" y="96" width="320" height="19"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CiW-RM-tBK">
+                                <rect key="frame" x="7" y="20" width="32" height="30"/>
+                                <state key="normal" backgroundImage="back_icon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="close" destination="M4x-HA-77o" eventType="touchUpInside" id="Izm-v4-eR1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="webView" destination="2sR-uV-Ixz" id="kkQ-8u-zEW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ce0-5P-X99" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-224" y="-312"/>
+        </scene>
+        <!--Social Settings View Controller-->
+        <scene sceneID="kIq-hs-hAw">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" id="Q2f-aB-uwA" customClass="SocialSettingsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6Ix-uG-ag6"/>
+                        <viewControllerLayoutGuide type="bottom" id="V8j-AF-Yme"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="43J-Y4-L1g">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SETUP SOCIAL ACCOUNTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIz-SE-d2u">
+                                <rect key="frame" x="81" y="115" width="157" height="21"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Cond" family="Myriad Pro" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p7H-ZI-CZH">
+                                <rect key="frame" x="-1" y="125" width="98" height="1"/>
+                                <color key="backgroundColor" red="0.86799636989999995" green="0.86799636989999995" blue="0.86799636989999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EPF-9K-Eei">
+                                <rect key="frame" x="222" y="125" width="98" height="1"/>
+                                <color key="backgroundColor" red="0.86799636989999995" green="0.86799636989999995" blue="0.86799636989999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GtJ-B8-oFf">
+                                <rect key="frame" x="15" y="151" width="288" height="36"/>
+                                <state key="normal" backgroundImage="ig_log_in">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="instagramLogin" destination="Q2f-aB-uwA" eventType="touchUpInside" id="4ZK-y3-2Dt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m0i-Oi-cRQ">
+                                <rect key="frame" x="16" y="196" width="288" height="36"/>
+                                <state key="normal" backgroundImage="tw_log_in">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qUm-oS-Pxu">
+                                <rect key="frame" x="0.0" y="24" width="320" height="21"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Cond" family="Myriad Pro" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJR-U7-ZnC">
+                                <rect key="frame" x="0.0" y="49" width="81" height="50"/>
+                                <state key="normal" backgroundImage="settinga_menu_settings">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="show" id="O7r-1b-vGw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PREFERENCES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oed-63-Q8X">
+                                <rect key="frame" x="0.0" y="80" width="83" height="21"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="11"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ph-iy-2Hl">
+                                <rect key="frame" x="156" y="49" width="80" height="50"/>
+                                <state key="normal" backgroundImage="help_menu_settings">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ODN-dE-lrs" kind="show" id="aQS-03-WLC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HELP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTg-2i-Rxc">
+                                <rect key="frame" x="156" y="80" width="80" height="21"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="11"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pqn-b3-47Y">
+                                <rect key="frame" x="81" y="49" width="76" height="50"/>
+                                <state key="normal" backgroundImage="payment_menu_settings">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="jdz-4g-QeI" kind="show" id="Vj2-zk-1o0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PAYMENT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LyF-gL-mTq">
+                                <rect key="frame" x="81" y="80" width="76" height="21"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="11"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bwh-ah-e9R">
+                                <rect key="frame" x="236" y="49" width="84" height="50"/>
+                                <state key="normal" backgroundImage="social_menu_hover_settings">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SOCIAL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXM-cm-MdE">
+                                <rect key="frame" x="235" y="80" width="85" height="21"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="11"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t00-2g-ONk" customClass="emsNotificationButton">
+                                <rect key="frame" x="269" y="516" width="44" height="44"/>
+                                <state key="normal" backgroundImage="notification_btn">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showRightMenu" destination="Q2f-aB-uwA" eventType="touchUpInside" id="UcZ-xN-psI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uP7-KF-OQ3">
+                                <rect key="frame" x="8" y="516" width="44" height="44"/>
+                                <state key="normal" backgroundImage="menu_btn">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showLeftMenu" destination="Q2f-aB-uwA" eventType="touchUpInside" id="2ZY-Zh-6cO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lcn-BM-lOu">
+                                <rect key="frame" x="16" y="242" width="288" height="36"/>
+                                <state key="normal" backgroundImage="g+_log_in">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="gPlusBtn" destination="lcn-BM-lOu" id="d0O-Bc-XNf"/>
+                        <outlet property="igBtn" destination="GtJ-B8-oFf" id="lVe-Tl-R4A"/>
+                        <outlet property="twBtn" destination="m0i-Oi-cRQ" id="Srv-wg-2Mc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p4B-Su-00V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="894" y="359"/>
+        </scene>
+        <!--Privacy View Controller-->
+        <scene sceneID="hgk-7l-rdi">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" id="13B-Xb-H28" customClass="PrivacyViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RMD-me-YTo"/>
+                        <viewControllerLayoutGuide type="bottom" id="4ac-Wv-z36"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jgh-Vz-YtD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_navigation_bar(1)" translatesAutoresizingMaskIntoConstraints="NO" id="mnD-DQ-yxt">
+                                <rect key="frame" x="0.0" y="35" width="320" height="23"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Privacy Policy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUK-Ha-8Aq">
+                                <rect key="frame" x="73" y="67" width="174" height="36"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Cond" family="Myriad Pro" pointSize="21"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo_settings_ios_5" translatesAutoresizingMaskIntoConstraints="NO" id="IS1-Rq-stf">
+                                <rect key="frame" x="69" y="10" width="172" height="43"/>
+                            </imageView>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bKx-28-tHb">
+                                <rect key="frame" x="0.0" y="118" width="320" height="450"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="delegate" destination="13B-Xb-H28" id="IRQ-8o-b74"/>
+                                </connections>
+                            </webView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_navigation_bar(1)" translatesAutoresizingMaskIntoConstraints="NO" id="OrQ-eX-uNV">
+                                <rect key="frame" x="0.0" y="96" width="320" height="19"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Djk-1F-FrT">
+                                <rect key="frame" x="8" y="20" width="32" height="30"/>
+                                <state key="normal" backgroundImage="back_icon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="close" destination="13B-Xb-H28" eventType="touchUpInside" id="GST-d5-Qrl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="webView" destination="bKx-28-tHb" id="xrU-fq-dpD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Oe-oa-5Fi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="144" y="-312"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="858D8FC8-5835-4921-AB8A-9EDC6094A29A" width="115" height="83">
+            <mutableData key="keyedArchiveRepresentation">
+YnBsaXN0MDDUAQIDBAUGOzxYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK0HCBEW
+GxwgISksLzU4VSRudWxs1AkKCwwNDg8QViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBzV05TQ29sb3KA
+DBIAwAAAgAKACtISCRMVWk5TLm9iamVjdHOhFIADgAnSEgkXGqIYGYAEgAWACBAA0h0JHh9fEBROU1RJ
+RkZSZXByZXNlbnRhdGlvboAGgAdPEaIyTU0AKgAAlSwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAAB
+AAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAAB
+AAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAAB
+AAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAIAAAACAAAAAgAAAAIAAAAC
+AAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAQAAAAEAAAABAAAAAQAAAAEAAAAB
+AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAAB
+AAAAAQAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAAD
+AAAAAwAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAAB
+AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAACAAAAAgAAAAIAAAACAAAAAgAAAAMAAAAD
+AAAAAwAAAAMAAAADAAAAAwAAAAMAAAAEAAAABAAAAAQAAAAEAAAAAwAAAAMAAAADAAAAAwAAAAMAAAAD
+AAAAAwAAAAIAAAACAAAAAgAAAAIAAAACAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAAB
+AAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAQAAAAEAAAAB
+AAAAAQAAAAIAAAACAAAAAgAAAAIAAAADAAAAAwAAAAMAAAADAAAABAAAAAQAAAAEAAAABAAAAAQAAAAE
+AAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAMAAAADAAAAAwAAAAMAAAAC
+AAAAAgAAAAIAAAACAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB
+AAAAAQAAAAEAAAABAAAAAQAAAAIAAAACAAAAAgAAAAIAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAAD
+AAAAAwAAAAMAAAACAAAAAgAAAAIAAAACAAAAAQAAAAEAAAABAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAgAAAAIAAAACAAAAAwAAAAMAAAAD
+AAAAAwAAAAQAAAAEAAAABAAAAAUAAAAGAAAABgAAAAYAAAAGAAAABgAAAAcAAAAHAAAABwAAAAcAAAAG
+AAAABgAAAAYAAAAGAAAABgAAAAUAAAAEAAAABAAAAAQAAAADAAAAAwAAAAMAAAADAAAAAgAAAAIAAAAC
+AAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAAAAAAEAAAABAAAAAQAAAAEAAAACAAAAAgAAAAMAAAAD
+AAAAAwAAAAQAAAAEAAAABAAAAAUAAAAFAAAABQAAAAUAAAAFAAAABQAAAAUAAAAEAAAABAAAAAQAAAAD
+AAAAAwAAAAMAAAACAAAAAgAAAAEAAAABAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAB
+AAAAAQAAAAEAAAACAAAAAgAAAAIAAAADAAAAAwAAAAMAAAAEAAAABAAAAAQAAAAFAAAABgAAAAYAAAAH
+AAAABwAAAAcAAAAHAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAHAAAABwAAAAcAAAAH
+AAAABgAAAAYAAAAFAAAABAAAAAQAAAAEAAAAAwAAAAMAAAADAAAAAgAAAAIAAAACAAAAAQAAAAEAAAAB
+AAAAAgAAAAIAAAABAAAAAgAAAAIAAAADAAAAAwAAAAQAAAAEAAAABQAAAAUAAAAGAAAABgAAAAcAAAAH
+AAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAYAAAAGAAAABQAAAAUAAAAEAAAABAAAAAMAAAAD
+AAAAAgAAAAIAAAABAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAABAAAAAQAAAAEAAAACAAAAAgAAAAIAAAAD
+AAAAAwAAAAQAAAAEAAAABAAAAAYAAAAGAAAABwAAAAcAAAAHAAAACAAAAAgAAAAIAAAACQAAAAkAAAAJ
+AAAACQAAAAkAAAAJAAAACQAAAAkAAAAJAAAACQAAAAgAAAAIAAAACAAAAAcAAAAHAAAABwAAAAYAAAAG
+AAAABAAAAAQAAAAEAAAAAwAAAAMAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAADAAAAAwAAAAMAAAAD
+AAAABAAAAAUAAAAGAAAABgAAAAcAAAAIAAAACAAAAAkAAAAKAAAACgAAAAoAAAAKAAAACgAAAAoAAAAK
+AAAACgAAAAoAAAAJAAAACAAAAAgAAAAHAAAABgAAAAYAAAAFAAAABAAAAAMAAAADAAAAAgAAAAIAAAAB
+AAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAQAAAAEAAAABAAAAAQAAAAIAAAACAAAAAgAAAAMAAAADAAAABAAAAAQAAAAEAAAABgAAAAcAAAAH
+AAAABwAAAAgAAAAIF6qqLTnLy3VG0tK5P9LS3zTS0vMq0tL7IdHR/x7R0f8e0dH/HtHR/x7R0f8e0dH/
+HtHR/x7R0f8e0dH/HtHR/x7R0f8e0dH/HtHR/x7R0f8e0dH/HtHR/x7R0f8e0dH/HtHR/x7R0f8e0dH/
+HtHR/x7Q0P8e0ND/HtDQ/x7Pz/8ez8//Hs/P/x7Pz/8ezs7/Hc3N/x3MzP8dy8v/HcrK/x3Kyv8dycn/
+HcjI/x3Hx/8dx8f/HMbG/xzGxv8cxsb/HMbG/xzGxv8cxsb/H8bG/yjHx/syx8fzO8jI30PIyLo2wcF3
+FqamLgAAAAkAAAAIAAAABwAAAAYAAAAFAAAABAAAAAMAAAADAAAAAgAAAAIAAAABAAAAAQAAAAEAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAABAAAAAQAAAAIAAAAC
+AAAAAgAAAAMAAAADAAAABAAAAAQAAAAGAAAABgAAAAcAAAAIAAAACCW8vEU+0NC0LNHR8x3R0f8d0dH/
+HdHR/x3R0f8d0dH/HdHR/x3R0f8d0dH/HdHR/x3R0f8d0dH/HdHR/x3R0f8d0dH/HdHR/x3R0f8d0dH/
+HdHR/x3R0f8d0dH/HdHR/x3R0f8d0dH/HdHR/x3R0f8d0dH/HdHR/x3Q0P8d0ND/HdDQ/x3Pz/8dz8//
+Hc/P/x3Ozv8czc3/HMzM/xzLy/8cysr/HMnJ/xzIyP8cx8f/HMbG/xvGxv8bxcX/G8TE/xvDw/8bw8P/
+G8LC/xvBwf8bwcH/G8HB/xvCwv8bw8P/G8PD/xvExP8bxcX/G8bG/xzGxv8ryMjzPcjItSSzs0YAAAAJ
+AAAACAAAAAYAAAAFAAAABAAAAAMAAAACAAAAAgAAAAEAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAQAAAAEAAAABAAAAAQAAAAIAAAACAAAAAwAAAAMAAAAEAAAABAAAAAUAAAAG
+AAAABwAAAAgSW1sOM8nJdy7R0ewd0dH/HdHR/x3R0f8d0dH/HdHR/x3R0f8d0dH/HdHR/x3R0f8d0dH/
+HdHR/x3R0f8d0dH/HdHR/x3R0f8d0dH/HdHR/x3R0f8d0dH/HdHR/x3R0f8d0dH/HdHR/x3R0f8d0dH/
+HdHR/x3R0f8d0dH/HdHR/x3Q0P8d0ND/HdDQ/x3Pz/8dz8//Hc7O/xzNzf8czMz/HMvL/xzKyv8cycn/
+HMfH/xzGxv8bxcX/G8TE/xvDw/8bwMD/G7+//xu+vv8avLz/Gbu7/ya9vf8xv7//OMHB/zG/v/8nvr7/
+Gbu7/xq8vP8bvr7/G7+//xvAwP8bw8P/G8TE/xvFxf8cxsb/LcjI7DPExHgRVVUPAAAABwAAAAYAAAAF
+AAAABAAAAAMAAAACAAAAAgAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAB
+AAAAAQAAAAIAAAACAAAAAwAAAAMAAAAEAAAABAAAAAYAAAAHAAAABwAzMwo5ysp+LNHR9B3Q0P8d0ND/
+HdDQ/x3Q0P8d0ND/HdDQ/x3Q0P8d0ND/HdDQ/x3Q0P8d0ND/HdDQ/x3Q0P8d0ND/HdDQ/x3Q0P8d0ND/
+HdDQ/x3Q0P8d0ND/HdDQ/x3Q0P8d0ND/HdDQ/x3Q0P8d0ND/HdDQ/x3Q0P8d0ND/HdDQ/x3Pz/8dz8//
+Hc7O/x3Ozv8dzs7/Hc3N/xzMzP8cysr/HMnJ/xzIyP8cxsb/HMXF/xvExP8bwsL/G8DA/xu9vf8burr/
+RMTE/3/U1P+x5eX/1PDw//f8/P////////////////////////////j9/f/V8PD/s+Xl/4DV1f9HxcX/
+G7q6/xu9vf8bv7//G8LC/xvExP8bxcX/KsfH9DbDw38AMzMKAAAABwAAAAYAAAAEAAAAAwAAAAIAAAAC
+AAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAABAAAAAQAAAAIAAAACAAAAAwAAAAMAAAAE
+AAAABAAAAAYAAAAHAAAACDC7u0Ay0dHlHNDQ/xzQ0P8c0ND/HNDQ/xzQ0P8c0ND/HNDQ/xzQ0P8c0ND/
+HNDQ/xzQ0P8c0ND/HNDQ/xzQ0P8c0ND/HNDQ/xzQ0P8c0ND/HNDQ/xzQ0P8c0ND/HNDQ/xzQ0P8c0ND/
+HNDQ/xzQ0P8c0ND/HNDQ/xzQ0P8c0ND/HNDQ/xzPz/8cz8//HM7O/xzOzv8czs7/G8zM/xvLy/8bycn/
+G8nJ/xvHx/8bxcX/GsTE/xrCwv8av7//Gbu7/0LDw/+Z3d3/6Pj4////////////////////////////
+/////////////////////////////////////////////////////+v4+P+b3t7/RsTE/xm7u/8av7//
+GsLC/xrExP8bxcX/MMjI5Su0tEEAAAAIAAAABgAAAAUAAAADAAAAAgAAAAIAAAABAAAAAQAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAQAAAAEAAAABAAAAAQAAAAIAAAACAAAAAwAAAAMAAAAEAAAABQAAAAYAAAAHADMzCj7Ozpwe0ND+
+HNDQ/xzQ0P8c0ND/HNDQ/xzQ0P8c0ND/HNDQ/xzQ0P8c0ND/HNDQ/xzQ0P8c0ND/HNDQ/xzQ0P8c0ND/
+HNDQ/xzQ0P8c0ND/HNDQ/xzQ0P8c0ND/HNDQ/xzQ0P8c0ND/HNDQ/xzQ0P8c0ND/HNDQ/xzQ0P8c0ND/
+HNDQ/xzPz/8cz8//HM7O/xzOzv8czc3/G8zM/xvLy/8bycn/G8jI/xvGxv8axcX/GsLC/xq/v/8Zu7v/
+U8jI/8Tr6///////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////I7Oz/WcnJ/xm7u/8av7//GsLC/xrFxf8dxsb/
+O8fHnAAzMwoAAAAGAAAABQAAAAQAAAADAAAAAgAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAABAAAAAQAAAAIAAAAC
+AAAAAwAAAAMAAAAEAAAABQAAAAYAAAAHG5ubHDrR0dwc0ND/HNDQ/xzQ0P8c0ND/HNDQ/xzQ0P8c0ND/
+HNDQ/xzQ0P8c0ND/HNDQ/xzQ0P8c0ND/HNDQ/xzQ0P8c0ND/HNDQ/xzQ0P8c0ND/HNDQ/xzQ0P8c0ND/
+HNDQ/xzQ0P8c0ND/HNDQ/xzQ0P8c0ND/HNDQ/xzQ0P8c0ND/HNDQ/xzPz/8cz8//HM7O/xzOzv8czc3/
+G8zM/xvKyv8bycn/G8fH/xvFxf8axMT/GsDA/xq9vf87wcH/wurq////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+///////////////////////////H7Oz/QMPD/xq9vf8awMD/GsTE/xvFxf84ycncGpGRHgAAAAcAAAAF
+AAAABAAAAAMAAAACAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAQAAAAIAAAACAAAAAwAAAAMAAAAEAAAABQAAAAYAAAAH
+NLS0LC7Q0PIbz8//G8/P/xvPz/8bz8//G8/P/xvPz/8bz8//G8/P/xvPz/8bz8//G8/P/xvPz/8bz8//
+G8/P/xvPz/8bz8//G8/P/xvPz/8bz8//G8/P/xvPz/8bz8//G8/P/xvPz/8bz8//G8/P/xvPz/8bz8//
+G8/P/xvPz/8bz8//G8/P/xvOzv8bzs7/G83N/xvNzf8bzMz/GsvL/xrJyf8ayMj/GsbG/xrExP8ZwsL/
+Gb6+/xu5uf+K19f/+v39////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+//////v+/v+P2dn/HLm5/xm+vv8ZwsL/GsTE/yzIyPQura0yAAAABwAAAAUAAAAEAAAAAwAAAAIAAAAB
+AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAB
+AAAAAQAAAAEAAAACAAAAAgAAAAMAAAAEAAAABAAAAAYAAAAHRLu7PCvQ0Pgbz8//G8/P/xvPz/8bz8//
+G8/P/xvPz/8bz8//G8/P/xvPz/8bz8//G8/P/xvPz/8bz8//G8/P/xvPz/8bz8//G8/P/xvPz/8bz8//
+G8/P/xvPz/8bz8//G8/P/xvPz/8bz8//G8/P/xvPz/8bz8//G8/P/xvPz/8bz8//G8/P/xvOzv8bzs7/
+G87O/xvNzf8bzc3/GsvL/xrJyf8ayMj/GsbG/xrExP8ZwcH/Gb6+/y68vP/E6+v/////////////////
+////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////8ns7P8yvr7/
+Gb29/xnBwf8axMT/KMjI+T+0tD0AAAAHAAAABQAAAAMAAAACAAAAAgAAAAEAAAABAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAEAAAACAAAAAgAAAAMAAAAE
+AAAABAAAAAYAAAAHQLS0LCvQ0Pgaz8//Gs/P/xrPz/8az8//Gs/P/xrPz/8az8//Gs/P/xrPz/8az8//
+Gs/P/xrPz/8az8//Gs/P/xrPz/8az8//Gs/P/xrPz/8az8//Gs/P/xrPz/8az8//Gs/P/xrPz/8az8//
+Gs/P/xrPz/8az8//Gs/P/xrPz/8az8//Gs/P/xrPz/8azs7/Gs7O/xrNzf8azc3/GcvL/xnKyv8Zycn/
+GcbG/xnExP8YwcH/GLy8/zu/v//j9fX/////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////6Pf3/0HBwf8YvLz/GMHB/xnExP8qycn4
+PqqqLQAAAAYAAAAFAAAAAwAAAAIAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAABAAAAAQAAAAEAAAACAAAAAgAAAAMAAAADAAAABAAAAAYAAAAHN5ubHDTQ0PMazs7/
+Gs7O/xrOzv8azs7/Gs7O/xrOzv8azs7/Gs7O/xrOzv8azs7/Gs7O/xrOzv8azs7/Gs7O/xrOzv8azs7/
+Gs7O/xrOzv8azs7/Gs7O/xrOzv8azs7/Gs7O/xrOzv8azs7/Gs7O/xrOzv8azs7/Gs7O/xrOzv8azs7/
+Gs7O/xrOzv8azc3/Gs3N/xrMzP8azMz/GsvL/xnJyf8ZyMj/GcXF/xnDw/8YwMD/GLq6/0bCwv/u+fn/
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+///////////////////////////w+vr/TsXF/xi7u/8YwMD/GcPD/zPHx/Mxk5MaAAAABgAAAAQAAAAD
+AAAAAgAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAEAAAAB
+AAAAAgAAAAIAAAADAAAABAAAAAUAAAAHABwcCUHQ0N8Zzs7/Gc7O/xnOzv8Zzs7/Gc7O/xnOzv8Zzs7/
+Gc7O/xnOzv8Zzs7/Gc7O/xnOzv8Zzs7/Gc7O/xnOzv8Zzs7/Gc7O/xnOzv8Zzs7/Gc7O/xnOzv8Zzs7/
+Gc7O/xnOzv8Zzs7/Gc7O/xnOzv8Zzs7/Gc7O/xnOzv8Zzs7/Gc7O/xnOzv8Zzs7/Gc3N/xnMzP8ZzMz/
+GcvL/xnKyv8YyMj/GMbG/xjDw/8XwcH/F7y8/zq/v//s+Pj/////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+//////H6+v9IwsL/F7u7/xfBwf8Yw8P/P8nJ3QAcHAkAAAAGAAAABAAAAAMAAAACAAAAAQAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAABAAAAAgAAAAIAAAADAAAABAAAAAQAAAAG
+AAAAB1bPz6MZzs7/Gc7O/xnOzv8Zzs7/Gc7O/xnOzv8Zzs7/Gc7O/xnOzv8Zzs7/Gc7O/xnOzv8Zzs7/
+Gc7O/xnOzv8Zzs7/Gc7O/xnOzv8Zzs7/Gc7O/xnOzv8Zzs7/Gc7O/xnOzv8Zzs7/Gc7O/xnOzv8Zzs7/
+Gc7O/xnOzv8Zzs7/Gc7O/xnOzv8Zzs7/Gc3N/xnNzf8ZzMz/GczM/xnKyv8YyMj/GMfH/xjExP8YwsL/
+F7y8/yu6uv/l9vb/////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////7Pn5/zG7u/8Xvb3/
+GMLC/xjExP9SyMifAAAABwAAAAUAAAADAAAAAgAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAEAAAABAAAAAQAAAAIAAAADAAAAAwAAAAQAAAAGAAAAB1C/v0Aezc3/Gc3N/xnNzf8Zzc3/
+Gc3N/xnNzf8Zzc3/Gc3N/xnNzf8Zzc3/Gc3N/xnNzf8Zzc3/Gc3N/xnNzf8Zzc3/Gc3N/xnNzf8Zzc3/
+Gc3N/xnNzf8Zzc3/Gc3N/xnNzf8Zzc3/Gc3N/xnNzf8Zzc3/Gc3N/xnNzf8Zzc3/Gc3N/xnNzf8Zzc3/
+Gc3N/xnMzP8Zy8v/GcvL/xnKyv8YyMj/GMfH/xjExP8YwsL/F729/xm0tP/A6Oj/////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////I7Oz/GrW1/xe+vv8YwsL/HsXF/1C7u0AAAAAG
+AAAABAAAAAMAAAACAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAQAAAAIAAAAC
+AAAAAwAAAAQAAAAEAAAABgAAAAg/z8/oGM3N/xjNzf8Yzc3/GM3N/xjNzf8Yzc3/GM3N/xjNzf8Yzc3/
+GM3N/xjNzf8Yzc3/GM3N/xjNzf8Yzc3/GM3N/xjNzf8Yzc3/GM3N/xjNzf8Yzc3/GM3N/xjNzf8Yzc3/
+GM3N/xjNzf8Yzc3/GM3N/xjNzf8Yzc3/GM3N/xjNzf8Yzc3/GM3N/xjMzP8YzMz/GMvL/xjLy/8Yycn/
+F8fH/xfFxf8Xw8P/Fr29/xW3t/+E09P/////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/////////////////////47X1/8VuLj/Fr6+/xfDw/8+ycnoAAAABwAAAAUAAAAEAAAAAgAAAAEAAAAB
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAEAAAACAAAAAwAAAAMAAAAEAAAABgAAAAddzMyD
+GMzM/xjMzP8YzMz/GMzM/xjMzP8YzMz/GMzM/xjMzP8YzMz/GMzM/xjMzP8YzMz/GMzM/xjMzP8YzMz/
+GMzM/xjMzP8YzMz/GMzM/xjMzP8YzMz/GMzM/xjMzP8YzMz/GMzM/xjMzP8YzMz/GMzM/xjMzP8YzMz/
+GMzM/xjMzP8YzMz/GMzM/xjMzP8Yy8v/GMrK/xjKyv8Yycn/F8fH/xfFxf8XwsL/F7+//xa5uf82ubn/
++Pz8////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////6/v7/
+PL29/xa6uv8Xv7//F8LC/1vHx4QAAAAGAAAABAAAAAMAAAACAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAQAAAAEAAAACAAAAAgAAAAMAAAAEAAAABAAAAAYAHBwJNc7O9RfMzP8XzMz/F8zM/xfMzP8XzMz/
+F8zM/xfMzP8XzMz/F8zM/xfMzP8XzMz/F8zM/xfMzP8XzMz/F8zM/xfMzP8XzMz/F8zM/xfMzP8XzMz/
+F8zM/xfMzP8XzMz/F8zM/xfMzP8XzMz/F8zM/xfMzP8XzMz/F8zM/xfMzP8XzMz/F8zM/xfMzP8Xy8v/
+F8vL/xfKyv8Xysr/F8jI/xbGxv8WxMT/FsHB/xW8vP8UsrL/vebm////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////8bq6v8UtLT/Fb29/xbBwf80yMj0
+ABwcCQAAAAUAAAADAAAAAgAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAABAAAAAgAAAAIAAAAD
+AAAABAAAAAYAAAAHY8zMgRbMzP8WzMz/FszM/xbMzP8WzMz/FszM/xbMzP8WzMz/FszM/xbMzP8WzMz/
+FszM/xbMzP8WzMz/FszM/xbMzP8WzMz/FszM/xbMzP8WzMz/FszM/xbMzP8WzMz/FszM/xbMzP8WzMz/
+FszM/xbMzP8WzMz/FszM/xbMzP8WzMz/FszM/xbMzP8WzMz/FsvL/xbLy/8Wysr/FsnJ/xXHx/8VxcX/
+FcLC/xW+vv8Ut7f/Sr+/////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////WcXF/xS5uf8Vv7//FcLC/2HIyIEAAAAGAAAABAAAAAMAAAAB
+AAAAAQAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAQAAAAIAAAADAAAAAwAAAAQAAAAGAAAABz/Ozu0Wy8v/
+FsvL/xbLy/8Wy8v/FsvL/xbLy/8Wy8v/FsvL/xbLy/8Wy8v/FsvL/xbLy/8Wy8v/FsvL/xbLy/8Wy8v/
+FsvL/xbLy/8Wy8v/FsvL/xbLy/8Wy8v/FsvL/xbLy/8Wy8v/FsvL/xbLy/8Wy8v/FsvL/xbLy/8Wy8v/
+FsvL/xbLy/8Wy8v/FsvL/xbKyv8Wycn/FsnJ/xbHx/8VxcX/FcPD/xXAwP8Vu7v/E7Gx/7vl5f//////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/////8vs7P8Ts7P/Fby8/xXBwf89x8fuAAAABwAAAAUAAAADAAAAAgAAAAEAAAAAAAAAAAAAAAAAAAAB
+AAAAAQAAAAIAAAACAAAAAwAAAAQAAAAFAAAAB2y/v0AXy8v/FcvL/xXLy/8Vy8v/FcvL/xXLy/8Vy8v/
+FcvL/xXLy/8Vy8v/FcvL/xXLy/8Vy8v/FcvL/xXLy/8Vy8v/FcvL/xXLy/8Vy8v/FcvL/xXLy/8Vy8v/
+FcvL/xXLy/8Vy8v/FcvL/xXLy/8Vy8v/FcvL/xXLy/8Vy8v/FcvL/xXLy/8Vy8v/FcvL/xXLy/8Vysr/
+FcnJ/xXIyP8Vxsb/FMXF/xTBwf8Uvb3/E7e3/ze4uP//////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////P729/xO4uP8Uvr7/
+FsLC/2y7u0AAAAAGAAAABAAAAAIAAAABAAAAAAAAAAAAAAABAAAAAQAAAAEAAAACAAAAAgAAAAMAAAAE
+AAAABgAAAAdaz8+6FcrK/xXKyv8Vysr/FcrK/xXKyv8Vysr/FcrK/xXKyv8Vysr/FcrK/xXKyv8Vysr/
+FcrK/xXKyv8Vysr/FcrK/xXKyv8Vysr/FcrK/xXKyv8Vysr/FcrK/xXKyv8Vysr/FcrK/xXKyv8Vysr/
+FcrK/xXKyv8Vysr/FcrK/xXKyv8Vysr/FcrK/xXKyv8Vycn/FcnJ/xXIyP8Vx8f/FcXF/xTDw/8UwMD/
+FLq6/xKxsf+M0tL/////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////5bY2P8Ss7P/FLy8/xTAwP9aysq7AAAABwAAAAQAAAAD
+AAAAAQAAAAEAAAAAAAAAAQAAAAEAAAABAAAAAgAAAAMAAAADAAAABAAAAAYAAAAHNs3N8xTKyv8Uysr/
+FMrK/xTKyv8Uysr/FMrK/xTKyv8Uysr/FMrK/xTKyv8Uysr/FMrK/xTKyv8Uysr/FMrK/xTKyv8Uysr/
+FMrK/xTKyv8Uysr/FMrK/xTKyv8Uysr/FMrK/xTKyv8Uysr/FMrK/xTKyv8Uysr/FMrK/xTKyv8Uysr/
+FMrK/xTKyv8Uysr/FMnJ/xTIyP8UyMj/FMbG/xPExP8TwcH/E7y8/xO5uf8RrKz/4fPz////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+///////////p9/f/E7Cw/xO6uv8Tvr7/NsfH8wAAAAcAAAAFAAAAAwAAAAIAAAABAAAAAAAAAAEAAAAB
+AAAAAQAAAAIAAAADAAAABAAAAAUAAAAHV6ioJhbJyf8Uycn/FMnJ/xTJyf8Uycn/FMnJ/xTJyf8Uycn/
+FMnJ/xTJyf8Uycn/FMnJ/xTJyf8Uycn/FMnJ/xTJyf8Uycn/FMnJ/xTJyf8Uycn/FMnJ/xTJyf8Uycn/
+FMnJ/xTJyf8Uycn/FMnJ/xTJyf8Uycn/FMnJ/xTJyf8Uycn/FMnJ/xTJyf8Uycn/FMnJ/xTIyP8Ux8f/
+FMfH/xTFxf8Tw8P/E7+//xO6uv8Ts7P/NLOz////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////z26uv8Ttrb/
+E7y8/xXAwP9RqKgmAAAABgAAAAMAAAACAAAAAQAAAAAAAAABAAAAAQAAAAIAAAACAAAAAwAAAAQAAAAG
+AAAAB2LLy4UTycn/E8nJ/xPJyf8Tycn/E8nJ/xPJyf8Tycn/E8nJ/xPJyf8Tycn/E8nJ/xPJyf8Tycn/
+E8nJ/xPJyf8Tycn/E8nJ/xPJyf8Tycn/E8nJ/xPJyf8Tycn/E8nJ/xPJyf8Tycn/E8nJ/xPJyf8Tycn/
+E8nJ/xPJyf8Tycn/E8nJ/xPJyf8Tycn/E8nJ/xPJyf8TyMj/E8fH/xPGxv8TxMT/EsHB/xK+vv8Subn/
+EbCw/3DHx///////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////97zc3/EbKy/xK6uv8Sv7//YsXFhQAAAAYAAAAE
+AAAAAgAAAAEAAAAAAAAAAQAAAAEAAAACAAAAAgAAAAMAAAAEAAAABgAAAAdTzMy+EsjI/xLIyP8SyMj/
+EsjI/xLIyP8SyMj/EsjI/xLIyP8SyMj/EsjI/xLIyP8SyMj/EsjI/xLIyP8SyMj/EsjI/xLIyP8SyMj/
+EsjI/xLIyP8SyMj/EsjI/xLIyP8SyMj/EsjI/xLIyP8SyMj/EsjI/xLIyP8SyMj/EsjI/xLIyP8SyMj/
+EsjI/xLIyP8SyMj/EsfH/xLGxv8SxcX/EsPD/xHAwP8Ru7v/Eba2/xCrq/+k2tr/////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////rd/f/xCvr/8RuLj/Eb29/1TGxr0AAAAHAAAABAAAAAIAAAABAAAAAAAAAAEAAAAB
+AAAAAgAAAAIAAAADAAAABAAAAAYAAAAHQ8zM4RLIyP8SyMj/EsjI/xLIyP8SyMj/EsjI/xLIyP8SyMj/
+EsjI/xLIyP8SyMj/EsjI/xLIyP8SyMj/EsjI/xLIyP8SyMj/EsjI/xLIyP8SyMj/EsjI/xLIyP8SyMj/
+EsjI/xLIyP8SyMj/EsjI/xLIyP8SyMj/EsjI/xLIyP8SyMj/EsjI/xLIyP8SyMj/EsjI/xLHx/8Sxsb/
+EsXF/xLDw/8Rv7//Ebu7/xG0tP8Qqan/yOjo////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////9Tu7v8PrKz/
+Ebe3/xG9vf9DxsbgAAAABwAAAAQAAAADAAAAAQAAAAEAAAABAAAAAQAAAAIAAAADAAAAAwAAAAQAAAAG
+AAAACDPKyvQRx8f/EcfH/xHHx/8Rx8f/EcfH/xHHx/8Rx8f/EcfH/xHHx/8Rx8f/EcfH/xHHx/8Rx8f/
+EcfH/xHHx/8Rx8f/EcfH/xHHx/8Rx8f/EcfH/xHHx/8Rx8f/EcfH/xHHx/8Rx8f/EcfH/xHHx/8Rx8f/
+EcfH/xHHx/8Rx8f/EcfH/xHHx/8Rx8f/EcfH/xHGxv8Rxsb/EcXF/xHDw/8RwcH/EL29/xC5uf8QsbH/
+D6am/+74+P//////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////2+/v/D6mp/xC1tf8Qu7v/NMTE8wAAAAcAAAAF
+AAAAAwAAAAEAAAABAAAAAQAAAAEAAAACAAAAAwAAAAMAAAAEAAAABgAAAAkkycn8EcfH/xHHx/8Rx8f/
+EcfH/xHHx/8Rx8f/EcfH/xHHx/8Rx8f/EcfH/xHHx/8Rx8f/EcfH/xHHx/8Rx8f/EcfH/xHHx/8Rx8f/
+EcfH/xHHx/8Rx8f/EcfH/xHHx/8Rx8f/EcfH/xHHx/8Rx8f/EcfH/xHHx/8Rx8f/EcfH/xHHx/8Rx8f/
+EcfH/xHHx/8Rxsb/EcXF/xHFxf8Rw8P/EcHB/xC8vP8Qt7f/EK+v/xSmpv//////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/////////////////////xmsrP8QtLT/ELq6/yPAwPwAAAAIAAAABQAAAAMAAAACAAAAAQAAAAEAAAAB
+AAAAAgAAAAMAAAAEAAAABAAAAAcAAAAJGcjI/hDHx/8Qx8f/EMfH/xDHx/8Qx8f/EMfH/xDHx/8Qx8f/
+EMfH/xDHx/8Qx8f/EMfH/xDHx/8Qx8f/EMfH/xDHx/8Qx8f/EMfH/xDHx/8Qx8f/EMfH/xDHx/8Qx8f/
+EMfH/xDHx/8Qx8f/EMfH/xDHx/8Qx8f/EMfH/xDHx/8Qx8f/EMfH/xDHx/8Qx8f/EMbG/xDFxf8QxcX/
+EMPD/w/AwP8PvLz/D7a2/w+urv8fqan/////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////8lr6//
+DrKz/w+5uf8Zvr7+AAAACAAAAAUAAAADAAAAAgAAAAEAAAABAAAAAQAAAAIAAAADAAAABAAAAAQAAAAH
+AAAACQ/Gxv8Pxsb/D8bG/w/Gxv8Pxsb/D8bG/w/Gxv8Pxsb/D8bG/w/Gxv8Pxsb/D8bG/w/Gxv8Pxsb/
+D8bG/w/Gxv8Pxsb/D8bG/w/Gxv8Pxsb/D8bG/w/Gxv8Pxsb/D8bG/w/Gxv8Pxsb/D8bG/w/Gxv8Pxsb/
+D8bG/w/Gxv8Pxsb/D8bG/w/Gxv8Pxsb/D8bG/w/Fxf8PxMT/D8TE/w/Cwv8Pv7//Dru7/w61tf8NrKz/
+KKur////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////KrCw/w2xsf8OuLj/Dry8/wAAAAgAAAAF
+AAAAAwAAAAIAAAABAAAAAQAAAAEAAAACAAAAAwAAAAQAAAAEAAAACAAAAAkPxsb/D8bG/w/Gxv8Pxsb/
+D8bG/w/Gxv8Pxsb/D8bG/w/Gxv8Pxsb/D8bG/w/Gxv8Pxsb/D8bG/w/Gxv8Pxsb/D8bG/w/Gxv8Pxsb/
+D8bG/w/Gxv8Pxsb/D8bG/w/Gxv8Pxsb/D8bG/w/Gxv8Pxsb/D8bG/w/Gxv8Pxsb/D8bG/w/Gxv8Pxsb/
+D8bG/w/Gxv8PxcX/D8TE/w/ExP8PwcH/D7+//w67u/8Os7P/Dq2t/x6np///////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/////////////////////yWtrf8Nr6//Dre3/xO9vf8AAAAIAAAABQAAAAMAAAACAAAAAQAAAAEAAAAB
+AAAAAgAAAAMAAAAEAAAABAAAAAgAAAAJF8bG/g7Fxf8OxcX/DsXF/w7Fxf8OxcX/DsXF/w7Fxf8OxcX/
+DsXF/w7Fxf8OxcX/DsXF/w7Fxf8OxcX/DsXF/w7Fxf8OxcX/DsXF/w7Fxf8OxcX/DsXF/w7Fxf8OxcX/
+DsXF/w7Fxf8OxcX/DsXF/w7Fxf8OxcX/DsXF/w7Fxf8OxcX/DsXF/w7Fxf8OxcX/DsTE/w7Dw/8Ow8P/
+DsDA/w69vf8Nurr/DbKy/wyrq/8RoKH/////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////8XqKj/
+DK+v/w22tv8bvb3+AAAACAAAAAUAAAADAAAAAgAAAAEAAAABAAAAAQAAAAIAAAADAAAAAwAAAAQAAAAH
+AAAACSHHx/wOxcX/DsXF/w7Fxf8OxcX/DsXF/w7Fxf8OxcX/DsXF/w7Fxf8OxcX/DsXF/w7Fxf8OxcX/
+DsXF/w7Fxf8OxcX/DsXF/w7Fxf8OxcX/DsXF/w7Fxf8OxcX/DsXF/w7Fxf8OxcX/DsXF/w7Fxf8OxcX/
+DsXF/w7Fxf8OxcX/DsXF/w7Fxf8OxcX/DsXF/w7ExP8OxMT/DsPD/w7AwP8Ovr7/Dbq6/w2ysv8Mq6v/
+C6Cg/+74+P//////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////1+/v/DKWl/wyvr/8Ntrb/JL6/+wAAAAcAAAAF
+AAAAAwAAAAIAAAABAAAAAQAAAAEAAAACAAAAAwAAAAMAAAAEAAAABwAAAAgvyMj0DcTE/w3ExP8NxMT/
+DcTE/w3ExP8NxMT/DcTE/w3ExP8NxMT/DcTE/w3ExP8NxMT/DcTE/w3ExP8NxMT/DcTE/w3ExP8NxMT/
+DcTE/w3ExP8NxMT/DcTE/w3ExP8NxMT/DcTE/w3ExP8NxMT/DcTE/w3ExP8NxMT/DcTE/w3ExP8NxMT/
+DcTE/w3ExP8Nw8P/DcPD/w3Cwv8Nv7//Db29/wy5uf8MsbH/DKqq/wqgoP/G5+f/////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////0u3t/wulpf8Mr6//DLa2/zDAwPMAAAAHAAAABQAAAAMAAAABAAAAAQAAAAEAAAAB
+AAAAAgAAAAIAAAADAAAABAAAAAcAAAAIPsfH4QzExP8MxMT/DMTE/wzExP8MxMT/DMTE/wzExP8MxMT/
+DMTE/wzExP8MxMT/DMTE/wzExP8MxMT/DMTE/wzExP8MxMT/DMTE/wzExP8MxMT/DMTE/wzExP8MxMT/
+DMTE/wzExP8MxMT/DMTE/wzExP8MxMT/DMTE/wzExP8MxMT/DMTE/wzExP8MxMT/DMPD/wzDw/8MwsL/
+DMDA/wy9vf8Murr/C7Gx/wuqqv8KoaL/otfX////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////6vd3f8Kpqb/
+C6+v/wu2tv8/wsLgAAAABwAAAAQAAAADAAAAAQAAAAEAAAABAAAAAQAAAAIAAAACAAAAAwAAAAUAAAAH
+AAAACE/Hx78Mw8P/DMPD/wzDw/8Mw8P/DMPD/wzDw/8Mw8P/DMPD/wzDw/8Mw8P/DMPD/wzDw/8Mw8P/
+DMPD/wzDw/8Mw8P/DMPD/wzDw/8Mw8P/DMPD/wzDw/8Mw8P/DMPD/wzDw/8Mw8P/DMPD/wzDw/8Mw8P/
+DMPD/wzDw/8Mw8P/DMPD/wzDw/8Mw8P/DMPD/wzDw/8MwsL/DMHB/wy/v/8MvLz/DLm5/wuxsf8Lqqr/
+CqGh/23Bwf//////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////93yMj/Cqen/wuvr/8Ltrb/TsPDvgAAAAYAAAAE
+AAAAAgAAAAEAAAAAAAAAAQAAAAEAAAACAAAAAgAAAAMAAAAFAAAABwAAAAhdxMSHC8PD/wvDw/8Lw8P/
+C8PD/wvDw/8Lw8P/C8PD/wvDw/8Lw8P/C8PD/wvDw/8Lw8P/C8PD/wvDw/8Lw8P/C8PD/wvDw/8Lw8P/
+C8PD/wvDw/8Lw8P/C8PD/wvDw/8Lw8P/C8PD/wvDw/8Lw8P/C8PD/wvDw/8Lw8P/C8PD/wvDw/8Lw8P/
+C8PD/wvDw/8Lw8P/C8LC/wvBwf8Lv7//C7y8/wu6uv8Ls7P/Cqys/wmkpP8tqKj/////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////N7Gx/wmpqf8KsLD/Cra2/1vCwoYAAAAGAAAABAAAAAIAAAABAAAAAAAAAAEAAAAB
+AAAAAQAAAAIAAAADAAAABQAAAAYAAAAIRJubKQzCwv8KwsL/CsLC/wrCwv8KwsL/CsLC/wrCwv8KwsL/
+CsLC/wrCwv8KwsL/CsLC/wrCwv8KwsL/CsLC/wrCwv8KwsL/CsLC/wrCwv8KwsL/CsLC/wrCwv8KwsL/
+CsLC/wrCwv8KwsL/CsLC/wrCwv8KwsL/CsLC/wrCwv8KwsL/CsLC/wrCwv8KwsL/CsLC/wrBwf8KwMD/
+Cr+//wq8vP8Kubn/CrOz/wmsrP8JpKT/CJyc/9/y8v//////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////6PX1/wqhof8Jqan/
+CbCw/wu3t/9Gn58oAAAABQAAAAMAAAACAAAAAQAAAAAAAAABAAAAAQAAAAEAAAACAAAAAwAAAAQAAAAF
+AAAABwAAAAosxcXzCsLC/wrCwv8KwsL/CsLC/wrCwv8KwsL/CsLC/wrCwv8KwsL/CsLC/wrCwv8KwsL/
+CsLC/wrCwv8KwsL/CsLC/wrCwv8KwsL/CsLC/wrCwv8KwsL/CsLC/wrCwv8KwsL/CsLC/wrCwv8KwsL/
+CsLC/wrCwv8KwsL/CsLC/wrCwv8KwsL/CsLC/wrCwv8KwcH/CsDA/wq/v/8KvLz/Crq6/wq0tP8Jra3/
+Caen/wigoP+HzMz/////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////5HR0f8IpKT/Caur/wmxsf8svb3zAAAACAAAAAUAAAAD
+AAAAAgAAAAEAAAAAAAAAAQAAAAEAAAABAAAAAgAAAAIAAAAEAAAABQAAAAcAAAAKUcbGvQnBwf8JwcH/
+CcHB/wnBwf8JwcH/CcHB/wnBwf8JwcH/CcHB/wnBwf8JwcH/CcHB/wnBwf8JwcH/CcHB/wnBwf8JwcH/
+CcHB/wnBwf8JwcH/CcHB/wnBwf8JwcH/CcHB/wnBwf8JwcH/CcHB/wnBwf8JwcH/CcHB/wnBwf8JwcH/
+CcHB/wnBwf8JwcH/CcDA/wnAwP8Jvr7/Cb29/wm6uv8JtLT/Ca6u/winp/8IoaH/K6en//7/////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+//////////82rq7/B6Wl/witrf8JsrL/UcHBvAAAAAcAAAAEAAAAAwAAAAEAAAABAAAAAAAAAAAAAAAB
+AAAAAQAAAAIAAAACAAAABAAAAAUAAAAGAAAACmKwsEQLwcH/CcHB/wnBwf8JwcH/CcHB/wnBwf8JwcH/
+CcHB/wnBwf8JwcH/CcHB/wnBwf8JwcH/CcHB/wnBwf8JwcH/CcHB/wnBwf8JwcH/CcHB/wnBwf8JwcH/
+CcHB/wnBwf8JwcH/CcHB/wnBwf8JwcH/CcHB/wnBwf8JwcH/CcHB/wnBwf8JwcH/CcHB/wnAwP8JwMD/
+Cb+//wm+vv8Ju7v/Cbe3/wmwsP8Jqan/CKOj/webm/+239//////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////G5+f/B6Cg/wioqP8Jra3/
+C7W1/2a0tEEAAAAFAAAABAAAAAIAAAABAAAAAQAAAAAAAAAAAAAAAQAAAAEAAAABAAAAAgAAAAMAAAAE
+AAAABQAAAAgAAAAMMcPD7gjAwP8IwMD/CMDA/wjAwP8IwMD/CMDA/wjAwP8IwMD/CMDA/wjAwP8IwMD/
+CMDA/wjAwP8IwMD/CMDA/wjAwP8IwMD/CMDA/wjAwP8IwMD/CMDA/wjAwP8IwMD/CMDA/wjAwP8IwMD/
+CMDA/wjAwP8IwMD/CMDA/wjAwP8IwMD/CMDA/wjAwP8IwMD/CL+//wi+vv8Ivb3/CLq6/wi3t/8IsLD/
+CKur/wejo/8Hnp7/P66u////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////Tre3/weiov8Hqan/CK6u/zG8vO4AAAAJAAAABQAAAAMAAAAC
+AAAAAQAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAQAAAAIAAAACAAAABAAAAAUAAAAIAAAAC1e9vYQIwMD/
+CMDA/wjAwP8IwMD/CMDA/wjAwP8IwMD/CMDA/wjAwP8IwMD/CMDA/wjAwP8IwMD/CMDA/wjAwP8IwMD/
+CMDA/wjAwP8IwMD/CMDA/wjAwP8IwMD/CMDA/wjAwP8IwMD/CMDA/wjAwP8IwMD/CMDA/wjAwP8IwMD/
+CMDA/wjAwP8IwMD/CMDA/wi/v/8Iv7//CL6+/wi7u/8Iubn/CLOz/witrf8Ipqb/B6Ki/waamv+439//
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+wOTk/wafn/8Hp6f/CKys/wixsf9Wvb2DAAAABwAAAAQAAAACAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAA
+AAAAAQAAAAEAAAACAAAAAgAAAAQAAAAFAAAABgAAAAoAEBAQJcLC9QfAwP8HwMD/B8DA/wfAwP8HwMD/
+B8DA/wfAwP8HwMD/B8DA/wfAwP8HwMD/B8DA/wfAwP8HwMD/B8DA/wfAwP8HwMD/B8DA/wfAwP8HwMD/
+B8DA/wfAwP8HwMD/B8DA/wfAwP8HwMD/B8DA/wfAwP8HwMD/B8DA/wfAwP8HwMD/B8DA/wfAwP8Hv7//
+B7+//we+vv8Hvb3/B7m5/we1tf8HsLD/B6io/wejo/8Gnp7/LKam//j8/P//////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////+v39/y6qqv8GoaL/B6io/wetrf8kuLj1
+ABcXCwAAAAYAAAADAAAAAgAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAQAAAAIAAAAE
+AAAABAAAAAYAAAAJAAAADU66uokHv7//B7+//we/v/8Hv7//B7+//we/v/8Hv7//B7+//we/v/8Hv7//
+B7+//we/v/8Hv7//B7+//we/v/8Hv7//B7+//we/v/8Hv7//B7+//we/v/8Hv7//B7+//we/v/8Hv7//
+B7+//we/v/8Hv7//B7+//we/v/8Hv7//B7+//we/v/8Hv7//B7+//we+vv8Hvr7/B7y8/we7u/8Ht7f/
+B7Gx/werq/8Hpqb/B6Gh/wabm/96xcX/////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/////////////////////4TLy/8Gnp7/B6Wl/werq/8HsLD/ULm5hgAAAAgAAAAEAAAAAwAAAAIAAAAB
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAEAAAACAAAAAwAAAAQAAAAFAAAABwAAAAwAAAAR
+LsDA6ga/v/8Gv7//Br+//wa/v/8Gv7//Br+//wa/v/8Gv7//Br+//wa/v/8Gv7//Br+//wa/v/8Gv7//
+Br+//wa/v/8Gv7//Br+//wa/v/8Gv7//Br+//wa/v/8Gv7//Br+//wa/v/8Gv7//Br+//wa/v/8Gv7//
+Br+//wa/v/8Gv7//Br+//wa/v/8Gvr7/Br6+/wa9vf8GvLz/Bri4/wa0tP8Grq7/Bqen/wajo/8GnZ7/
+BpiY/7ng4P//////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////8Ll5f8InJz/
+BqKi/waoqP8Gra3/L7i46QAAAAoAAAAGAAAAAwAAAAIAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAEAAAABAAAAAQAAAAMAAAAEAAAABAAAAAYAAAALAAAADzuamk4Kvr7/Bb6+/wW+vv8Fvr7/
+Bb6+/wW+vv8Fvr7/Bb6+/wW+vv8Fvr7/Bb6+/wW+vv8Fvr7/Bb6+/wW+vv8Fvr7/Bb6+/wW+vv8Fvr7/
+Bb6+/wW+vv8Fvr7/Bb6+/wW+vv8Fvr7/Bb6+/wW+vv8Fvr7/Bb6+/wW+vv8Fvr7/Bb6+/wW+vv8Fvr7/
+Bb29/wW9vf8FvLz/Bbu7/wW6uv8Ftrb/BbCw/wWrq/8FpaX/BaKi/wWdnf8anp7/3/Hx////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////+Tz8/8eoqL/BaCg/wWlpf8Fqan/C7Gx/0Ojo0gAAAAI
+AAAABAAAAAMAAAACAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAEAAAAC
+AAAAAwAAAAQAAAAGAAAACAAAAA0AAAATP7e3qwW+vv8Fvr7/Bb6+/wW+vv8Fvr7/Bb6+/wW+vv8Fvr7/
+Bb6+/wW+vv8Fvr7/Bb6+/wW+vv8Fvr7/Bb6+/wW+vv8Fvr7/Bb6+/wW+vv8Fvr7/Bb6+/wW+vv8Fvr7/
+Bb6+/wW+vv8Fvr7/Bb6+/wW+vv8Fvr7/Bb6+/wW+vv8Fvr7/Bb6+/wW+vv8Fvb3/Bb29/wW8vP8Fu7v/
+Bbi4/wW0tP8Frq7/Baen/wWjo/8Fn5//BZub/yijo//q9vb/////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+//////D4+P8xqan/BZ+f/wWkpP8FqKj/Ba2t/0K2tqUAAAAJAAAABQAAAAMAAAACAAAAAQAAAAEAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAABAAAAAQAAAAMAAAADAAAABQAAAAcAAAAM
+AAAAEAALCxgqvr7iBL6+/wS+vv8Evr7/BL6+/wS+vv8Evr7/BL6+/wS+vv8Evr7/BL6+/wS+vv8Evr7/
+BL6+/wS+vv8Evr7/BL6+/wS+vv8Evr7/BL6+/wS+vv8Evr7/BL6+/wS+vv8Evr7/BL6+/wS+vv8Evr7/
+BL6+/wS+vv8Evr7/BL6+/wS+vv8Evr7/BL29/wS9vf8EvLz/BLy8/wS7u/8Etrb/BLGx/wSsrP8Epqb/
+BKOj/wSenv8EmZn/Nqqq/+r29v//////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////D4+P88ra3/BJ2d/wSjo/8Epqb/
+BKur/yu2tt8AEhIOAAAABwAAAAQAAAACAAAAAgAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAABAAAAAQAAAAEAAAADAAAAAwAAAAQAAAAFAAAACAAAAA4AAAASHFtbLR69vfQEvb3/
+BL29/wS9vf8Evb3/BL29/wS9vf8Evb3/BL29/wS9vf8Evb3/BL29/wS9vf8Evb3/BL29/wS9vf8Evb3/
+BL29/wS9vf8Evb3/BL29/wS9vf8Evb3/BL29/wS9vf8Evb3/BL29/wS9vf8Evb3/BL29/wS9vf8Evb3/
+BL29/wS9vf8EvLz/BLy8/wS7u/8Eurr/BLe3/wSzs/8Er6//BKmp/wSkpP8EoKD/BJ2d/wSYmP8po6P/
+4PLy////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/////////////////////+b09P80qqr/BJub/wShof8EpKT/BKmp/x+xsfMha2sfAAAACQAAAAUAAAAD
+AAAAAgAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAB
+AAAAAQAAAAMAAAADAAAABQAAAAgAAAAKAAAAEAAAABYgcXE/FL29+QS9vf8Evb3/BL29/wS9vf8Evb3/
+BL29/wS9vf8Evb3/BL29/wS9vf8Evb3/BL29/wS9vf8Evb3/BL29/wS9vf8Evb3/BL29/wS9vf8Evb3/
+BL29/wS9vf8Evb3/BL29/wS9vf8Evb3/BL29/wS9vf8Evb3/BL29/wS9vf8Evb3/BL29/wS8vP8Eu7v/
+BLu7/wS6uv8Etrb/BLKy/wStrf8Ep6f/BKSk/wSfn/8EnZ3/BJmZ/xmdnf+64eH/////////////////
+////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////8jn5/8eoKD/
+BJyc/wShof8EpKT/BKen/xWvr/gniYk0AAAACwAAAAUAAAADAAAAAgAAAAEAAAABAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAEAAAACAAAAAwAAAAMAAAAG
+AAAACQAAAAwAAAASAAAAFyCAgFATvLz5A729/wO9vf8Dvb3/A729/wO9vf8Dvb3/A729/wO9vf8Dvb3/
+A729/wO9vf8Dvb3/A729/wO9vf8Dvb3/A729/wO9vf8Dvb3/A729/wO9vf8Dvb3/A729/wO9vf8Dvb3/
+A729/wO9vf8Dvb3/A729/wO9vf8Dvb3/A729/wO9vf8DvLz/A7y8/wO7u/8Du7v/A7m5/wO2tv8DsbH/
+A6ur/wOnp/8Do6P/A5+f/wOenv8Dm5v/BZaW/3zFxf/3+/v/////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////+fz8/4TKyv8ImZn/A52d/wOhof8DpKT/A6en/xGurvkplJRF
+AAAADAAAAAYAAAAEAAAAAgAAAAEAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAgAAAAMAAAADAAAABQAAAAcAAAAKAAAADwAAABQAAAAa
+E2trQxa6u/QDvLz/A7y8/wO8vP8DvLz/A7y8/wO8vP8DvLz/A7y8/wO8vP8DvLz/A7y8/wO8vP8DvLz/
+A7y8/wO8vP8DvLz/A7y8/wO8vP8DvLz/A7y8/wO8vP8DvLz/A7y8/wO8vP8DvLz/A7y8/wO8vP8DvLz/
+A7y8/wO8vP8DvLz/A7y8/wO7u/8Durr/A7q6/wO6uv8Dt7f/A7W1/wOwsP8Dqqv/A6am/wOjo/8Dn5//
+A52d/wObm/8Dl5f/JqKi/7jf3///////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+v+Pj/yulpf8DmJj/A52e/wOgoP8DpKT/A6am/xatrfQahoY7AAAADAAAAAcAAAAEAAAAAgAAAAIAAAAB
+AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB
+AAAAAQAAAAEAAAACAAAAAwAAAAMAAAAGAAAACAAAAAsAAAARAAAAFgAAABwFSUk4Hba24QK8vP8CvLz/
+Ary8/wK8vP8CvLz/Ary8/wK8vP8CvLz/Ary8/wK8vP8CvLz/Ary8/wK8vP8CvLz/Ary8/wK8vP8CvLz/
+Ary8/wK8vP8CvLz/Ary8/wK8vP8CvLz/Ary8/wK8vP8CvLz/Ary8/wK8vP8CvLz/Ary8/wK8vP8CvLz/
+Aru7/wK6uv8Curr/Arq6/wK3t/8CtbX/ArCw/wKrq/8Cp6f/AqSk/wKhof8Cnp7/Apub/wKZmf8Clpb/
+QK2t/7rh4f//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////+/4+P/Ra+v/wKXl/8Cm5v/Ap6e/wKhof8CpaX/
+Aqam/yGurt0HYmInAAAADAAAAAgAAAAEAAAAAgAAAAIAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAgAAAAIAAAAD
+AAAABAAAAAYAAAAJAAAADAAAABIAAAAXAAAAHQANDSgfqamrBLy8/wK8vP8CvLz/Ary8/wK8vP8CvLz/
+Ary8/wK8vP8CvLz/Ary8/wK8vP8CvLz/Ary8/wK8vP8CvLz/Ary8/wK8vP8CvLz/Ary8/wK8vP8CvLz/
+Ary8/wK8vP8CvLz/Ary8/wK8vP8CvLz/Ary8/wK8vP8CvLz/Ary8/wK8vP8Cu7v/Arq6/wK6uv8Curr/
+Are3/wKzs/8CsLD/Aqur/wKnp/8CpKT/AqKi/wKfn/8CnZ3/Apub/wKZmf8Clpb/LaWl/4nLy//k8/P/
+////////////////////////////////////////////////////////////////////////////////
+5fT0/4/Nzf8upqb/ApaW/wKamv8Cnp7/Ap+f/wKhof8CpaX/Baam/yWoqKQADQ0UAAAADAAAAAgAAAAE
+AAAAAgAAAAIAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAACAAAAAgAAAAMAAAAEAAAABwAAAAkAAAAN
+AAAAEgAAABcAAAAdAAAAJhF4eFsXt7jqAru7/wK7u/8Cu7v/Aru7/wK7u/8Cu7v/Aru7/wK7u/8Cu7v/
+Aru7/wK7u/8Cu7v/Aru7/wK7u/8Cu7v/Aru7/wK7u/8Cu7v/Aru7/wK7u/8Cu7v/Aru7/wK7u/8Cu7v/
+Aru7/wK7u/8Cu7v/Aru7/wK7u/8Cu7v/Arq6/wK5uf8Cubn/Arm5/wK5uf8Ctrb/ArS0/wKvsP8Cq6v/
+Aqan/wKkpP8CoqL/AqCg/wKenv8CnJz/Apub/wKZmf8Cl5f/A5SU/zOmpv9xwMD/pdfX/8zp6f/y+vr/
+///////////////////////////0+vr/zenp/6jY2P9wwMD/L6Wl/wOVlf8Cl5f/Apub/wKcnP8Cnp7/
+Ap+f/wKjo/8CpaX/Gqur5xWKikoAAAARAAAACwAAAAgAAAAFAAAAAgAAAAIAAAABAAAAAQAAAAEAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAABAAAAAgAAAAIAAAACAAAABAAAAAUAAAAHAAAACgAAAA4AAAASAAAAGAAAAB4AAAAk
+AAwMLBidnZIPurr1Abu7/wG7u/8Bu7v/Abu7/wG7u/8Bu7v/Abu7/wG7u/8Bu7v/Abu7/wG7u/8Bu7v/
+Abu7/wG7u/8Bu7v/Abu7/wG7u/8Bu7v/Abu7/wG7u/8Bu7v/Abu7/wG7u/8Bu7v/Abu7/wG7u/8Bu7v/
+Abu7/wG7u/8Burr/Abm5/wG5uf8Bubn/Abm5/wG2tv8BtLT/Aa+w/wGtrf8Bqan/Aaam/wGkpP8BoqL/
+AaCg/wGenv8BnZ3/AZyc/wGamv8BmZn/AZeX/wGWlv8BlJT/AZSU/wqWlv8Vmpr/I6Cg/xabm/8Klpb/
+AZSU/wGUlP8Bl5f/AZeY/wGamv8BnJz/AZyc/wGfn/8Bn5//AaKi/wGkpP8QqKn0HJ+fhwAMDBYAAAAQ
+AAAACwAAAAcAAAAFAAAAAgAAAAIAAAABAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAC
+AAAAAgAAAAIAAAAEAAAABQAAAAgAAAAKAAAADgAAABEAAAAYAAAAGwAAACMAAAAoABUaMRSamo0RuLjv
+Abu7/wG7u/8Bu7v/Abu7/wG7u/8Bu7v/Abu7/wG7u/8Bu7v/Abu7/wG7u/8Bu7v/Abu7/wG7u/8Bu7v/
+Abu7/wG7u/8Bu7v/Abu7/wG7u/8Bu7v/Abu7/wG7u/8Bu7v/Abu7/wG7u/8Bu7v/Abu7/wG7u/8Bubn/
+Abm5/wG5uf8Bubn/Aba2/wG1tf8BsbH/Aa+v/wGsrP8Bp6f/AaWl/wGkpP8BoqL/AaCg/wGenv8Bnp7/
+AZ2d/wGcnP8Bm5v/AZub/wGbm/8Bmpr/AZqa/wGbm/8Bm5v/AZub/wGbm/8Bm5v/AZub/wGdnf8Bnp7/
+AZ+f/wGgoP8BoqL/AaSl/xOoqe4XmpqDACQkHAAAABIAAAANAAAACQAAAAYAAAAFAAAAAgAAAAEAAAAB
+AAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAIAAAACAAAAAgAAAAQAAAAF
+AAAABwAAAAsAAAANAAAAEQAAABYAAAAaAAAAHwAAACYAAAAqAAAALQh6emIgrq7AELm59QG7u/8Bu7v/
+Abu7/wG7u/8Bu7v/Abu7/wG7u/8Bu7v/Abu7/wG7u/8Bu7v/Abu7/wG7u/8Bu7v/Abu7/wG7u/8Bu7v/
+Abu7/wG7u/8Bu7v/Abu7/wG7u/8Bu7v/Abu7/wG7u/8Bu7v/Abu7/wG5uf8Bubn/Abm5/wG5uf8Bubn/
+Aba2/wGzs/8BsLD/Aa6u/wGsrP8BqKj/Aaam/wGkpf8Bo6P/AaGh/wGhof8BoKD/AZ+f/wGfn/8Bnp7/
+AZ6e/wGenv8Bnp7/AZ6e/wGenv8Bnp7/AZ+f/wGgoP8BoaH/AaKi/wGjo/8Rp6f1JaWlvAmEhFMAAAAW
+AAAAEgAAAA8AAAALAAAACAAAAAUAAAAEAAAAAgAAAAEAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAIAAAACAAAABAAAAAUAAAAHAAAACgAAAA0AAAAR
+AAAAFAAAABgAAAAcAAAAIQAAACYAAAApAAAALAAAAC0AWVlNGJeXjCSursQgtrblFbi49Qy6uvwCurr/
+ALq6/wC6uv8Aurr/ALq6/wC6uv8Aurr/ALq6/wC6uv8Aurr/ALq6/wC6uv8Aurr/ALq6/wC6uv8Aurr/
+ALq6/wC6uv8Aurr/ALq6/wC6uv8Aurr/ALm5/wC4uP8AuLj/ALi4/wC4uP8Atrb/ALW1/wCysv8Ar7D/
+AK2t/wCrq/8Ap6f/AKam/wCkpP8ApKT/AKOj/wCiov8AoaH/AKGh/wChof8AoaH/AKGh/wChof8DoqL/
+DKSk+xalpfUjpqbiKKOjwByUlIEAZmY8AAAAGAAAABYAAAASAAAADwAAAAsAAAAIAAAABgAAAAQAAAAD
+AAAAAQAAAAEAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAIAAAACAAAAAgAAAAMAAAADAAAABQAAAAcAAAAJAAAADAAAAA8AAAATAAAAFgAAABoAAAAe
+AAAAIQAAACYAAAApAAAAKwAAAC0AAAAuAAAALgAAAC8AAAAvAAAALwAAAC8AAAAvAAAALwAAAC8AAAAv
+AAAALwAAAC8AAAAuAAAALgAAAC0AAAArAAAAKQAAACYAAAAhAAAAHgAAABoAAAAWAAAAEwAAAA8AAAAM
+AAAACQAAAAcAAAAGAAAABQAAAAUAAAAEAAAABgAAAAYAAAAGAAAACAAAAAsAAAAOAAAAEAAAABMAAAAW
+AAAAGAAAABgAAAAbAAAAHAAAABwAAAAdAAAAHQAAAB0AAAAdAAAAHQAAABsAAAAbAAAAGQAAABYAAAAW
+AAAAFAAAABAAAAAOAAAACwAAAAkAAAAGAAAABAAAAAMAAAACAAAAAQAAAAEAAAABAAAAAQAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAIAAAAC
+AAAAAwAAAAMAAAAFAAAABwAAAAkAAAAMAAAADgAAABAAAAAUAAAAGAAAABoAAAAdAAAAIAAAACQAAAAn
+AAAAKAAAACoAAAArAAAAKwAAAC0AAAAtAAAALQAAAC0AAAAtAAAALQAAACsAAAArAAAAKgAAACgAAAAn
+AAAAJAAAACAAAAAdAAAAGgAAABgAAAAUAAAAEAAAAA4AAAAMAAAACQAAAAcAAAAFAAAAAwAAAAMAAAAE
+AAAABAAAAAQAAAACAAAABAAAAAQAAAAGAAAACAAAAAoAAAAMAAAADQAAAA8AAAARAAAAEgAAABUAAAAW
+AAAAFgAAABYAAAAWAAAAFgAAABUAAAAVAAAAEwAAABEAAAAQAAAADQAAAAwAAAAKAAAACAAAAAYAAAAE
+AAAAAwAAAAMAAAABAAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAIAAAADAAAAAwAAAAQAAAAG
+AAAACAAAAAoAAAANAAAADwAAABEAAAATAAAAFgAAABkAAAAbAAAAHQAAACAAAAAiAAAAIwAAACQAAAAm
+AAAAJwAAACcAAAAnAAAAJwAAACYAAAAkAAAAIwAAACIAAAAgAAAAHQAAABsAAAAZAAAAFgAAABMAAAAR
+AAAADwAAAA0AAAAKAAAACAAAAAYAAAAEAAAAAwAAAAMAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAAC
+AAAAAgAAAAQAAAAFAAAABQAAAAcAAAAIAAAACQAAAAsAAAAMAAAADQAAAA0AAAANAAAADQAAAA0AAAAM
+AAAADAAAAAsAAAAJAAAACAAAAAcAAAAGAAAABAAAAAQAAAADAAAAAgAAAAEAAAABAAAAAQAAAAEAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAACAAAAAgAAAAIAAAADAAAABAAAAAUAAAAHAAAACAAAAAoAAAAM
+AAAADwAAABAAAAASAAAAFAAAABYAAAAZAAAAGgAAABsAAAAbAAAAHAAAABwAAAAcAAAAHAAAABwAAAAc
+AAAAGwAAABsAAAAaAAAAGQAAABYAAAAUAAAAEgAAABAAAAAPAAAADAAAAAoAAAAIAAAABwAAAAUAAAAE
+AAAAAwAAAAIAAAACAAAAAgAAAAEAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAAD
+AAAABAAAAAUAAAAFAAAABQAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAFAAAABAAAAAQAAAAD
+AAAAAgAAAAIAAAACAAAAAQAAAAEAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAQAAAAEAAAACAAAAAgAAAAMAAAADAAAABAAAAAUAAAAHAAAACQAAAAoAAAALAAAADQAAAA8AAAAR
+AAAAEgAAABMAAAAUAAAAFAAAABUAAAAWAAAAFgAAABYAAAAWAAAAFQAAABQAAAAUAAAAEwAAABIAAAAR
+AAAADwAAAA0AAAALAAAACgAAAAkAAAAHAAAABQAAAAQAAAADAAAAAwAAAAIAAAACAAAAAQAAAAEAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAAC
+AAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAABAAAAAQAAAAEAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAIAAAAC
+AAAAAgAAAAMAAAADAAAABAAAAAUAAAAGAAAACAAAAAkAAAAKAAAACwAAAA0AAAANAAAADgAAABAAAAAQ
+AAAAEAAAABEAAAARAAAAEAAAABAAAAAQAAAADgAAAA0AAAANAAAACwAAAAoAAAAJAAAACAAAAAYAAAAF
+AAAABAAAAAMAAAADAAAAAgAAAAIAAAACAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAAC
+AAAAAgAAAAIAAAABAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAQAAAAEAAAACAAAAAwAAAAMAAAAD
+AAAABAAAAAUAAAAGAAAABgAAAAcAAAAJAAAACgAAAAoAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAAL
+AAAACwAAAAoAAAAKAAAACQAAAAcAAAAGAAAABgAAAAUAAAAEAAAAAwAAAAMAAAADAAAAAgAAAAEAAAAB
+AAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAwAAAAMAAAADAAAABAAAAAQAAAAF
+AAAABQAAAAYAAAAGAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAGAAAABgAAAAUAAAAF
+AAAABAAAAAQAAAADAAAAAwAAAAMAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAMAAAADAAAAAwAAAAMAAAAEAAAABAAAAAQAAAAE
+AAAABQAAAAUAAAAFAAAABQAAAAQAAAAEAAAABAAAAAQAAAADAAAAAwAAAAMAAAADAAAAAQAAAAEAAAAB
+AAAAAQAAAAEAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAB
+AAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAAC
+AAAAAgAAAAIAAAACAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAABAAAAAQAAAAEAAAAB
+AAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAAB
+AAAAAQAAAAEAAAABAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAAB
+AAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAAB
+AAAAAQAAAAEAAAABAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAQAAAwAA
+AAEAcwAAAQEAAwAAAAEAUwAAAQIAAwAAAAQAAJXaAQMAAwAAAAEAAQAAAQYAAwAAAAEAAgAAAREABAAA
+AAEAAAAIARIAAwAAAAEAAQAAARUAAwAAAAEABAAAARYAAwAAAAEAUwAAARcABAAAAAEAAJUkARwAAwAA
+AAEAAQAAAVIAAwAAAAEAAgAAAVMAAwAAAAQAAJXih3MABwAADEgAAJXqAAAAAAAIAAgACAAIAAEAAQAB
+AAEAAAxITGlubwIQAABtbnRyUkdCIFhZWiAHzgACAAkABgAxAABhY3NwTVNGVAAAAABJRUMgc1JHQgAA
+AAAAAAAAAAAAAAAA9tYAAQAAAADTLUhQICAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAABFjcHJ0AAABUAAAADNkZXNjAAABhAAAAGx3dHB0AAAB8AAAABRia3B0AAACBAAA
+ABRyWFlaAAACGAAAABRnWFlaAAACLAAAABRiWFlaAAACQAAAABRkbW5kAAACVAAAAHBkbWRkAAACxAAA
+AIh2dWVkAAADTAAAAIZ2aWV3AAAD1AAAACRsdW1pAAAD+AAAABRtZWFzAAAEDAAAACR0ZWNoAAAEMAAA
+AAxyVFJDAAAEPAAACAxnVFJDAAAEPAAACAxiVFJDAAAEPAAACAx0ZXh0AAAAAENvcHlyaWdodCAoYykg
+MTk5OCBIZXdsZXR0LVBhY2thcmQgQ29tcGFueQAAZGVzYwAAAAAAAAASc1JHQiBJRUM2MTk2Ni0yLjEA
+AAAAAAAAAAAAABJzUkdCIElFQzYxOTY2LTIuMQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAWFlaIAAAAAAAAPNRAAEAAAABFsxYWVogAAAAAAAAAAAAAAAAAAAAAFhZ
+WiAAAAAAAABvogAAOPUAAAOQWFlaIAAAAAAAAGKZAAC3hQAAGNpYWVogAAAAAAAAJKAAAA+EAAC2z2Rl
+c2MAAAAAAAAAFklFQyBodHRwOi8vd3d3LmllYy5jaAAAAAAAAAAAAAAAFklFQyBodHRwOi8vd3d3Lmll
+Yy5jaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABkZXNjAAAAAAAA
+AC5JRUMgNjE5NjYtMi4xIERlZmF1bHQgUkdCIGNvbG91ciBzcGFjZSAtIHNSR0IAAAAAAAAAAAAAAC5J
+RUMgNjE5NjYtMi4xIERlZmF1bHQgUkdCIGNvbG91ciBzcGFjZSAtIHNSR0IAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAZGVzYwAAAAAAAAAsUmVmZXJlbmNlIFZpZXdpbmcgQ29uZGl0aW9uIGluIElFQzYxOTY2LTIu
+MQAAAAAAAAAAAAAALFJlZmVyZW5jZSBWaWV3aW5nIENvbmRpdGlvbiBpbiBJRUM2MTk2Ni0yLjEAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAHZpZXcAAAAAABOk/gAUXy4AEM8UAAPtzAAEEwsAA1yeAAAAAVhZ
+WiAAAAAAAEwJVgBQAAAAVx/nbWVhcwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAo8AAAACc2lnIAAA
+AABDUlQgY3VydgAAAAAAAAQAAAAABQAKAA8AFAAZAB4AIwAoAC0AMgA3ADsAQABFAEoATwBUAFkAXgBj
+AGgAbQByAHcAfACBAIYAiwCQAJUAmgCfAKQAqQCuALIAtwC8AMEAxgDLANAA1QDbAOAA5QDrAPAA9gD7
+AQEBBwENARMBGQEfASUBKwEyATgBPgFFAUwBUgFZAWABZwFuAXUBfAGDAYsBkgGaAaEBqQGxAbkBwQHJ
+AdEB2QHhAekB8gH6AgMCDAIUAh0CJgIvAjgCQQJLAlQCXQJnAnECegKEAo4CmAKiAqwCtgLBAssC1QLg
+AusC9QMAAwsDFgMhAy0DOANDA08DWgNmA3IDfgOKA5YDogOuA7oDxwPTA+AD7AP5BAYEEwQgBC0EOwRI
+BFUEYwRxBH4EjASaBKgEtgTEBNME4QTwBP4FDQUcBSsFOgVJBVgFZwV3BYYFlgWmBbUFxQXVBeUF9gYG
+BhYGJwY3BkgGWQZqBnsGjAadBq8GwAbRBuMG9QcHBxkHKwc9B08HYQd0B4YHmQesB78H0gflB/gICwgf
+CDIIRghaCG4IggiWCKoIvgjSCOcI+wkQCSUJOglPCWQJeQmPCaQJugnPCeUJ+woRCicKPQpUCmoKgQqY
+Cq4KxQrcCvMLCwsiCzkLUQtpC4ALmAuwC8gL4Qv5DBIMKgxDDFwMdQyODKcMwAzZDPMNDQ0mDUANWg10
+DY4NqQ3DDd4N+A4TDi4OSQ5kDn8Omw62DtIO7g8JDyUPQQ9eD3oPlg+zD88P7BAJECYQQxBhEH4QmxC5
+ENcQ9RETETERTxFtEYwRqhHJEegSBxImEkUSZBKEEqMSwxLjEwMTIxNDE2MTgxOkE8UT5RQGFCcUSRRq
+FIsUrRTOFPAVEhU0FVYVeBWbFb0V4BYDFiYWSRZsFo8WshbWFvoXHRdBF2UXiReuF9IX9xgbGEAYZRiK
+GK8Y1Rj6GSAZRRlrGZEZtxndGgQaKhpRGncanhrFGuwbFBs7G2MbihuyG9ocAhwqHFIcexyjHMwc9R0e
+HUcdcB2ZHcMd7B4WHkAeah6UHr4e6R8THz4faR+UH78f6iAVIEEgbCCYIMQg8CEcIUghdSGhIc4h+yIn
+IlUigiKvIt0jCiM4I2YjlCPCI/AkHyRNJHwkqyTaJQklOCVoJZclxyX3JicmVyaHJrcm6CcYJ0kneier
+J9woDSg/KHEooijUKQYpOClrKZ0p0CoCKjUqaCqbKs8rAis2K2krnSvRLAUsOSxuLKIs1y0MLUEtdi2r
+LeEuFi5MLoIuty7uLyQvWi+RL8cv/jA1MGwwpDDbMRIxSjGCMbox8jIqMmMymzLUMw0zRjN/M7gz8TQr
+NGU0njTYNRM1TTWHNcI1/TY3NnI2rjbpNyQ3YDecN9c4FDhQOIw4yDkFOUI5fzm8Ofk6Njp0OrI67zst
+O2s7qjvoPCc8ZTykPOM9Ij1hPaE94D4gPmA+oD7gPyE/YT+iP+JAI0BkQKZA50EpQWpBrEHuQjBCckK1
+QvdDOkN9Q8BEA0RHRIpEzkUSRVVFmkXeRiJGZ0arRvBHNUd7R8BIBUhLSJFI10kdSWNJqUnwSjdKfUrE
+SwxLU0uaS+JMKkxyTLpNAk1KTZNN3E4lTm5Ot08AT0lPk0/dUCdQcVC7UQZRUFGbUeZSMVJ8UsdTE1Nf
+U6pT9lRCVI9U21UoVXVVwlYPVlxWqVb3V0RXklfgWC9YfVjLWRpZaVm4WgdaVlqmWvVbRVuVW+VcNVyG
+XNZdJ114XcleGl5sXr1fD19hX7NgBWBXYKpg/GFPYaJh9WJJYpxi8GNDY5dj62RAZJRk6WU9ZZJl52Y9
+ZpJm6Gc9Z5Nn6Wg/aJZo7GlDaZpp8WpIap9q92tPa6dr/2xXbK9tCG1gbbluEm5rbsRvHm94b9FwK3CG
+cOBxOnGVcfByS3KmcwFzXXO4dBR0cHTMdSh1hXXhdj52m3b4d1Z3s3gReG54zHkqeYl553pGeqV7BHtj
+e8J8IXyBfOF9QX2hfgF+Yn7CfyN/hH/lgEeAqIEKgWuBzYIwgpKC9INXg7qEHYSAhOOFR4Wrhg6GcobX
+hzuHn4gEiGmIzokziZmJ/opkisqLMIuWi/yMY4zKjTGNmI3/jmaOzo82j56QBpBukNaRP5GokhGSepLj
+k02TtpQglIqU9JVflcmWNJaflwqXdZfgmEyYuJkkmZCZ/JpomtWbQpuvnByciZz3nWSd0p5Anq6fHZ+L
+n/qgaaDYoUehtqImopajBqN2o+akVqTHpTilqaYapoum/adup+CoUqjEqTepqaocqo+rAqt1q+msXKzQ
+rUStuK4trqGvFq+LsACwdbDqsWCx1rJLssKzOLOutCW0nLUTtYq2AbZ5tvC3aLfguFm40blKucK6O7q1
+uy67p7whvJu9Fb2Pvgq+hL7/v3q/9cBwwOzBZ8Hjwl/C28NYw9TEUcTOxUvFyMZGxsPHQce/yD3IvMk6
+ybnKOMq3yzbLtsw1zLXNNc21zjbOts83z7jQOdC60TzRvtI/0sHTRNPG1EnUy9VO1dHWVdbY11zX4Nhk
+2OjZbNnx2nba+9uA3AXcit0Q3ZbeHN6i3ynfr+A24L3hROHM4lPi2+Nj4+vkc+T85YTmDeaW5x/nqegy
+6LzpRunQ6lvq5etw6/vshu0R7ZzuKO6070DvzPBY8OXxcvH/8ozzGfOn9DT0wvVQ9d72bfb794r4Gfio
++Tj5x/pX+uf7d/wH/Jj9Kf26/kv+3P9t///SIiMkJVokY2xhc3NuYW1lWCRjbGFzc2VzXxAQTlNCaXRt
+YXBJbWFnZVJlcKMmJyhfEBBOU0JpdG1hcEltYWdlUmVwWk5TSW1hZ2VSZXBYTlNPYmplY3TSIiMqK1dO
+U0FycmF5oioo0iIjLS5eTlNNdXRhYmxlQXJyYXmjLSoo0zAxCTIzNFdOU1doaXRlXE5TQ29sb3JTcGFj
+ZUQwIDAAEAOAC9IiIzY3V05TQ29sb3KiNijSIiM5OldOU0ltYWdlojkoXxAPTlNLZXllZEFyY2hpdmVy
+0T0+VHJvb3SAAQAIABEAGgAjAC0AMgA3AEUASwBUAFsAaABvAHcAeQB+AIAAggCHAJIAlACWAJgAnQCg
+AKIApACmAKgArQDEAMYAyKL+owOjDqMXoyqjLqNBo0yjVaNao2KjZaNqo3mjfaOEo4yjmaOeo6CjoqOn
+o6+jsqO3o7+jwqPUo9ej3AAAAAAAAAIBAAAAAAAAAD8AAAAAAAAAAAAAAAAAAKPeA
+</mutableData>
+        </image>
+        <image name="arrow_small" width="14" height="22"/>
+        <image name="back_icon" width="59" height="60"/>
+        <image name="bg_navigation_bar(1)" width="640" height="92"/>
+        <image name="g+_log_in" width="608" height="74"/>
+        <image name="green_btn" width="608" height="88"/>
+        <image name="help_menu_hover_settings" width="160" height="100"/>
+        <image name="help_menu_settings" width="160" height="100"/>
+        <image name="ig_log_in" width="608" height="74"/>
+        <image name="light_blue_btn" width="608" height="88"/>
+        <image name="logo_settings_ios_5" width="274" height="72"/>
+        <image name="menu_bg" width="320" height="568"/>
+        <image name="menu_btn" width="46" height="47"/>
+        <image name="notification_btn" width="46" height="47"/>
+        <image name="payment_menu_hover_settings" width="160" height="100"/>
+        <image name="payment_menu_settings" width="160" height="100"/>
+        <image name="red_btn" width="304" height="44"/>
+        <image name="settinga_menu_hover_settings" width="160" height="100"/>
+        <image name="settinga_menu_settings" width="160" height="100"/>
+        <image name="social_menu_hover_settings" width="160" height="100"/>
+        <image name="social_menu_settings" width="160" height="100"/>
+        <image name="tw_log_in" width="608" height="74"/>
+        <image name="view_btn" width="608" height="68"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="oaf-4G-umE"/>
+        <segue reference="t0c-Lv-7w0"/>
+        <segue reference="ysj-pp-6gD"/>
+        <segue reference="qYx-PV-oL5"/>
+    </inferredMetricsTieBreakers>
+</document>

@@ -1,0 +1,39 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "443AA5586339F2C9E27C403FAA84A9DC286B26F7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "99a3eff9-9a79-e111-9a0d-00242129e9ee++5132" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "3C09FE37-C6F9-47A2-8F48-E2C83EB11CCA" : 0,
+    "443AA5586339F2C9E27C403FAA84A9DC286B26F7" : 0,
+    "99a3eff9-9a79-e111-9a0d-00242129e9ee++5132" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A3FC5EA7-E6F7-46D7-BB88-C0AEC15805EF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "3C09FE37-C6F9-47A2-8F48-E2C83EB11CCA" : "Test_sad",
+    "443AA5586339F2C9E27C403FAA84A9DC286B26F7" : "Scadaddle-CORE\/",
+    "99a3eff9-9a79-e111-9a0d-00242129e9ee++5132" : "Scadaddle-CORE\/Scadaddle\/Core\/Network\/JSON\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Scadaddle",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Scadaddle.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/rep.erminesoft.com\/scadaddle\/ios",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3C09FE37-C6F9-47A2-8F48-E2C83EB11CCA"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/rep.erminesoft.com\/scadaddle\/ios",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "443AA5586339F2C9E27C403FAA84A9DC286B26F7"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/r.bigun@svn.aimprosoft.com\/svn\/c3networx",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "99a3eff9-9a79-e111-9a0d-00242129e9ee++5132"
+    }
+  ]
+}
